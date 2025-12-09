@@ -80,6 +80,48 @@
         font-size: 14px;
         opacity: 0.85;
       }
+            /* --- CARD LINK STYLE --- */
+      .link-card {
+        display: block;
+        padding: 18px 22px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.06);
+        margin-bottom: 14px;
+        color: var(--text);
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.25s ease;
+      }
+      
+      /* Titolo interno */
+      .link-card-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: var(--text);
+      }
+      
+      /* Descrizione interna */
+      .link-card-desc {
+        font-size: 15px;
+        opacity: 0.9;
+        line-height: 1.5;
+      }
+      
+      /* Hover elegante */
+      .link-card:hover {
+        background: rgba(255, 255, 255, 0.12);
+        border-color: rgba(255, 255, 255, 0.25);
+        transform: translateY(-2px);
+      }
+      
+      /* Mobile */
+      @media (max-width: 480px) {
+        .link-card {
+          padding: 16px 18px;
+        }
+      }
+
 
       @media (max-width: 480px) {
         body { font-size: 17px; }
@@ -100,42 +142,59 @@
 
       <h2>I 7 blocchi di lavoro</h2>
 
-      <ul>
-        <li>
-          <a href="posizionamento.html">1. Posizionamento e Direzione Creativa</a><br />
-          Messaggio centrale, target, identità e tono di voce.
-        </li>
+            <div style="margin-top: 20px;">
 
-        <li>
-          <a href="riorganizzazione-sito.html">2. Riorganizzazione completa del sito</a><br />
-          Menu, architettura delle pagine e pulizia dei contenuti esistenti.
-        </li>
+        <a class="link-card" href="posizionamento.html">
+          <div class="link-card-title">1. Posizionamento e Direzione Creativa</div>
+          <div class="link-card-desc">
+            Messaggio centrale, target, identità e tono di voce.
+          </div>
+        </a>
 
-        <li>
-          <a href="pagine-principali.html">3. Creazione e ottimizzazione delle pagine principali</a><br />
-          Home, About, Servizi, Projects + impostazione dei primi tre progetti.
-        </li>
+        <a class="link-card" href="riorganizzazione-sito.html">
+          <div class="link-card-title">2. Riorganizzazione completa del sito</div>
+          <div class="link-card-desc">
+            Architettura del sito, pulizia delle pagine, struttura chiara.
+          </div>
+        </a>
 
-        <li>
-          <a href="stile-visivo.html">4. Impostazione stilistica e visiva</a><br />
-          Palette, font, layout e coerenza estetica.
-        </li>
+        <a class="link-card" href="pagine-principali.html">
+          <div class="link-card-title">3. Creazione e ottimizzazione delle pagine principali</div>
+          <div class="link-card-desc">
+            Home, About, Servizi, Projects + impostazione dei primi progetti.
+          </div>
+        </a>
 
-        <li>
-          <a href="seo-locale.html">5. SEO di base per visibilità locale</a><br />
-          Titoli, descrizioni, struttura leggibile da Google.
-        </li>
+        <a class="link-card" href="stile-visivo.html">
+          <div class="link-card-title">4. Impostazione stilistica e visiva</div>
+          <div class="link-card-desc">
+            Palette, font, layout e coerenza estetica.
+          </div>
+        </a>
 
-        <li>
-          <a href="struttura-contenuti.html">6. Struttura per contenuti futuri</a><br />
-          Come organizzare progetti, articoli e aggiornamenti in modo ordinato.
-        </li>
+        <a class="link-card" href="seo-locale.html">
+          <div class="link-card-title">5. SEO di base per visibilità locale</div>
+          <div class="link-card-desc">
+            Elementi fondamentali per essere trovati su ricerche locali.
+          </div>
+        </a>
 
-        <li>
-          <a href="guida-manutenzione.html">7. Guida finale alla manutenzione autonoma</a><br />
-          Come mantenere il sito pulito, coerente e facile da gestire.
-        </li>
-      </ul>
+        <a class="link-card" href="struttura-contenuti.html">
+          <div class="link-card-title">6. Struttura per contenuti futuri</div>
+          <div class="link-card-desc">
+            Modello per progetti, articoli tematici e aggiornamenti ordinati.
+          </div>
+        </a>
+
+        <a class="link-card" href="guida-manutenzione.html">
+          <div class="link-card-title">7. Guida finale alla manutenzione autonoma</div>
+          <div class="link-card-desc">
+            Come aggiornare il sito senza comprometterne struttura e SEO.
+          </div>
+        </a>
+
+      </div>
+
 
       <p class="note">
         Torna alla pagina principale del pacchetto:
