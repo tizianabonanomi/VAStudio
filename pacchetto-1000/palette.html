@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Palette visiva – victoriarchontis STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Actor&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #8a6666;
+        --text: #f3eded;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: "Actor", sans-serif;
+        line-height: 1.6;
+        font-size: 18px;
+      }
+
+      .page {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 32px 18px 60px;
+      }
+
+      h1 {
+        font-size: 26px;
+        margin-bottom: 24px;
+      }
+
+      p {
+        margin-bottom: 18px;
+      }
+
+      .palette {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 24px;
+      }
+
+      .swatch {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 220px;
+      }
+
+      .circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+
+      .name {
+        font-size: 14px;
+        opacity: 0.95;
+      }
+
+      .code {
+        font-size: 14px;
+        letter-spacing: 0.04em;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          font-size: 17px;
+        }
+        h1 {
+          font-size: 24px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="page">
+      <h1>Palette visiva – victoriarchontis STUDIO</h1>
+      <p>
+        Palette mediterranea contemporanea utilizzata per il sito e la
+        comunicazione digitale. Ogni colore è pensato per essere usato in modo
+        essenziale e coerente.
+      </p>
+
+      <section class="palette">
+        <div class="swatch">
+          <div class="circle" style="background:#B9A998;"></div>
+          <div>
+            <div class="name">Mediterranean Sand</div>
+            <div class="code">#B9A998</div>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="circle" style="background:#5A4435;"></div>
+          <div>
+            <div class="name">Stone Brown</div>
+            <div class="code">#5A4435</div>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="circle" style="background:#DCCCB8;"></div>
+          <div>
+            <div class="name">Soft Clay</div>
+            <div class="code">#DCCCB8</div>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="circle" style="background:#E7DCCF;"></div>
+          <div>
+            <div class="name">Light Lime Plaster</div>
+            <div class="code">#E7DCCF</div>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="circle" style="background:#E38F7B;"></div>
+          <div>
+            <div class="name">Terracotta Glow</div>
+            <div class="code">#E38F7B</div>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="circle" style="background:#CD3C36;"></div>
+          <div>
+            <div class="name">Raspberry Accent</div>
+            <div class="code">#CD3C36</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
