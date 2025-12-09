@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <title>OfficinaDigitale – Consulenza Digitale Essenziale</title>
+    <title>Officina Digitale – Consulenza digitale essenziale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Google Font: Actor -->
@@ -50,10 +50,17 @@
         opacity: 0.9;
       }
 
+      .header-line {
+        width: 60px;
+        height: 2px;
+        background: rgba(0, 0, 0, 0.3);
+        margin: 10px 0 6px;
+      }
+
       .hero-title {
         font-size: 30px;
         font-weight: 700;
-        margin: 14px 0 6px;
+        margin: 10px 0 6px;
         line-height: 1.3;
       }
 
@@ -118,6 +125,33 @@
         font-size: 15px;
       }
 
+      .note {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      .icon-circle {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: var(--muted);
+      }
+
+      .icon-circle.small {
+        width: 26px;
+        height: 26px;
+        font-size: 13px;
+        margin-right: 8px;
+        display: inline-flex;
+        margin-bottom: 0;
+      }
+
       a {
         color: var(--text);
         text-decoration: underline;
@@ -135,12 +169,22 @@
         background: rgba(0, 0, 0, 0.18);
         font-size: 13px;
         margin-top: 4px;
+        margin-right: 6px;
       }
 
       .footer {
         margin-top: 40px;
         font-size: 14px;
         opacity: 0.85;
+      }
+
+      ul {
+        margin: 0 0 18px 1.2rem;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 6px;
       }
 
       @media (max-width: 480px) {
@@ -153,6 +197,9 @@
         h2 {
           font-size: 21px;
         }
+        .page {
+          padding: 28px 16px 60px;
+        }
       }
     </style>
   </head>
@@ -160,18 +207,20 @@
   <body>
     <main class="page">
       <header>
-  <div class="logo-text">Officina Digitale</div>
-  <h1 class="hero-title">Consulenza digitale essenziale</h1>
-  <p class="hero-subtitle">
-    Aiuto professionisti e piccole attività a mettere ordine nella loro presenza online:
-    sito, posizionamento e visibilità di base.
-  </p>
-  <p class="hero-note">
-    Approccio pratico, minimale e strategico: niente fronzoli, solo ciò che serve
-    per comunicare in modo chiaro e professionale.
-  </p>
-</header>
-
+        <div class="logo-text">Officina Digitale</div>
+        <div class="header-line"></div>
+        <h1 class="hero-title">Consulenza digitale essenziale</h1>
+        <p class="hero-subtitle">
+          Aiuto professionisti e piccole attività a trasformare siti confusi
+          in una presenza digitale chiara, comprensibile e più facile da trovare.
+        </p>
+        <p class="hero-note">
+          Approccio pratico, minimale e strategico: tolgo il superfluo, organizzo i contenuti
+          e costruisco fondamenta solide da cui poter crescere.
+        </p>
+        <span class="pill">architetti e studi creativi</span>
+        <span class="pill">piccole attività locali</span>
+      </header>
 
       <!-- SEZIONE: COSA FACCIO -->
       <section>
@@ -184,7 +233,8 @@
 
         <div class="services-grid">
           <div class="card">
-            <div class="card-title">Posizionamento & messaggio</div>
+            <div class="icon-circle">01</div>
+            <div class="card-title">Posizionamento &amp; messaggio</div>
             <p>
               Ti aiuto a definire come raccontarti: cosa fai, per chi lo fai e perché
               un cliente dovrebbe scegliere proprio te.
@@ -194,9 +244,14 @@
               <li>messaggio centrale e payoff</li>
               <li>tono di voce chiaro e coerente</li>
             </ul>
+            <p class="note">
+              Risultato: una frase chiara per spiegare chi sei e cosa fai,
+              riutilizzabile su sito, email e canali esterni.
+            </p>
           </div>
 
           <div class="card">
+            <div class="icon-circle">02</div>
             <div class="card-title">Sito essenziale e ordinato</div>
             <p>
               Riorganizzo o imposto da zero un sito minimale, leggibile e facile da aggiornare.
@@ -206,9 +261,13 @@
               <li>testi sintetici e professionali</li>
               <li>navigazione pensata per persone, non per addetti ai lavori</li>
             </ul>
+            <p class="note">
+              Risultato: un sito meno pesante da leggere e più semplice da usare per chi arriva da zero.
+            </p>
           </div>
 
           <div class="card">
+            <div class="icon-circle">03</div>
             <div class="card-title">Identità visiva digitale</div>
             <p>
               Palette, font e stile di impaginazione coerenti con il tuo modo di lavorare.
@@ -218,9 +277,13 @@
               <li>scelta font</li>
               <li>linee guida base per sito e canali esterni</li>
             </ul>
+            <p class="note">
+              Risultato: un’immagine digitale allineata, senza effetti speciali inutili.
+            </p>
           </div>
 
           <div class="card">
+            <div class="icon-circle">04</div>
             <div class="card-title">Visibilità locale di base</div>
             <p>
               Ottimizzazione minima per essere trovati più facilmente
@@ -231,39 +294,46 @@
               <li>focus su ricerche locali e di nicchia</li>
               <li>struttura leggibile da Google</li>
             </ul>
+            <p class="note">
+              Risultato: una base tecnica corretta su cui poter costruire in futuro.
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- SEZIONE: CHI SONO -->
       <section>
-  <h2>Chi sono</h2>
-  <p class="section-lead">
-    Sono una consulente digitale con un approccio essenziale e orientato alla chiarezza.
-    Aiuto professionisti e piccole attività a definire il proprio posizionamento,
-    organizzare la presenza online e comunicare in modo semplice, credibile e coerente.
-  </p>
+        <h2>Chi sono</h2>
+        <p class="section-lead">
+          Sono una consulente digitale con un approccio essenziale e orientato alla chiarezza.
+          Aiuto professionisti e piccole attività a definire il proprio posizionamento,
+          organizzare la presenza online e comunicare in modo semplice, credibile e coerente.
+        </p>
 
-  <p class="section-lead">
-    Lavoro soprattutto su posizionamento, struttura dei contenuti,
-    identità visiva digitale e visibilità locale. Il mio metodo è pratico,
-    asciutto e privo di complicazioni: tolgo il superfluo, chiarisco ciò che conta
-    e costruisco fondamenta solide da cui poter crescere.
-  </p>
+        <p class="section-lead">
+          Lavoro soprattutto su posizionamento, struttura dei contenuti,
+          identità visiva digitale e visibilità locale. Il mio metodo è pratico,
+          asciutto e privo di complicazioni: tolgo il superfluo, chiarisco ciò che conta
+          e costruisco fondamenta solide da cui poter crescere.
+        </p>
 
-  <span class="pill">approccio essenziale</span>
-  <span class="pill">ordine e struttura</span>
-  <span class="pill">chiarezza digitale</span>
-</section>
+        <span class="pill">approccio essenziale</span>
+        <span class="pill">ordine e struttura</span>
+        <span class="pill">chiarezza digitale</span>
+      </section>
 
-      
       <!-- SEZIONE: PACCHETTO 1000 -->
       <section>
         <h2>Pacchetto principale</h2>
         <div class="card">
           <div class="card-title">Presenza Digitale Essenziale – € 1.000</div>
           <p>
-            Un pacchetto completo per impostare da zero (o riorganizzare) la tua presenza digitale:
-            posizionamento, sito minimale, identità visiva e SEO di base.
+            Per chi ha già un sito confuso o nessun sito e vuole una base solida:
+            messaggio chiaro, struttura ordinata, identità visiva coerente e SEO locale di base.
+          </p>
+          <p class="note">
+            Prima: pagine sparse, testi lunghi, nessuna direzione. <br />
+            Dopo: un sito unico, pulito, facile da capire anche per chi non ti conosce.
           </p>
           <p class="link-accent">
             Dettaglio del pacchetto:
@@ -294,27 +364,47 @@
         </div>
       </section>
 
+      <!-- SEZIONE: COME LAVORIAMO -->
+      <section>
+        <h2>Come lavoriamo insieme</h2>
+        <p class="section-lead">
+          Di solito partiamo da una fotografia onesta della situazione attuale
+          e da ciò che vorresti ottenere. Poi definiamo un perimetro chiaro:
+          cosa faccio io, cosa resta a te e quali sono i prossimi passi.
+        </p>
+
+        <ul>
+          <li>
+            <span class="icon-circle small">1</span>
+            <strong>Analisi</strong> – guardo sito, materiali e obiettivi.
+          </li>
+          <li>
+            <span class="icon-circle small">2</span>
+            <strong>Proposta</strong> – ti restituisco una struttura chiara e un pacchetto adatto.
+          </li>
+          <li>
+            <span class="icon-circle small">3</span>
+            <strong>Implementazione</strong> – lavoriamo in modo essenziale, con poche iterazioni mirate.
+          </li>
+        </ul>
+      </section>
+
       <!-- SEZIONE: CONTATTO -->
       <section>
-        <h2>Come lavorare insieme</h2>
+        <h2>Contatto</h2>
         <p class="section-lead">
-          Di solito parto da una breve analisi della situazione attuale (sito, materiali,
-          obiettivi) e da lì definisco insieme a te il perimetro del lavoro.
-        </p>
-        <p class="section-lead">
-          Se ti riconosci in questo approccio essenziale e strutturato, puoi contattarmi
-          via email per raccontarmi cosa vorresti migliorare.
+          Se ti riconosci in questo approccio essenziale e strutturato, puoi scrivermi
+          una breve descrizione della tua situazione attuale (sito, materiali, obiettivi)
+          e ti risponderò con il modo migliore per iniziare.
         </p>
         <p class="pill">contatto</p>
         <p class="section-lead">
-          <strong>Email:</strong> tuoindirizzo@email  
-          <br />
-          (puoi personalizzare testo e contatto come preferisci)
+          <strong>Email:</strong> tuoindirizzo@email
         </p>
       </section>
 
       <div class="footer">
-        VAstudio – consulenza digitale essenziale · pagina in sviluppo
+        Officina Digitale – consulenza digitale essenziale · pagina in sviluppo
       </div>
     </main>
   </body>
