@@ -16,7 +16,6 @@
         --bg: #8a6666;
         --text: #f3eded;
         --accent: #e38f7b;
-        --muted: #e7dcd0;
       }
 
       body {
@@ -52,7 +51,7 @@
 
       /* Link eleganti */
       a {
-        color: #f8f4f4;
+        color: var(--text);
         text-decoration: none;
         font-weight: 600;
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -87,7 +86,6 @@
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 6px;
-        color: var(--text);
       }
 
       .link-card-desc {
@@ -102,21 +100,22 @@
         transform: translateY(-2px);
       }
 
-      /* TIMELINE ORIZZONTALE */
+      /* --- TIMELINE ORIZZONTALE PERFETTAMENTE CENTRATA --- */
+
       .timeline-container {
-        margin: 36px 0 40px;
-        padding: 0 10px;
+        margin: 36px auto 40px;
+        max-width: 820px;
+        text-align: center;
       }
-      
+
       .timeline-bar {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         position: relative;
-        margin: 0 auto 10px;
-        max-width: 820px;
+        margin-bottom: 22px;
       }
-      
+
+      /* linea */
       .timeline-bar::before {
         content: "";
         position: absolute;
@@ -128,131 +127,125 @@
         transform: translateY(-50%);
         border-radius: 2px;
       }
-      
-      /* wrapper cliccabile del pallino */
+
+      /* wrapper cliccabile */
       .timeline-node {
-        position: relative;
-        z-index: 2;
+        display: flex;
+        justify-content: center;
         text-decoration: none;
       }
-      
-      /* pallino base */
+
+      /* pallino */
       .timeline-step {
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
         border-radius: 50%;
-        background: rgba(255, 255, 255, 0.25);
-        border: 2px solid rgba(255, 255, 255, 0.4);
-        transition: 0.2s ease;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.3);
+        transition: 0.25s ease;
+        z-index: 2;
       }
-      
-      /* STATO: Completato */
-      .timeline-step.done {
+
+      /* stati */
+      .done {
         background: var(--accent);
-        border-color: rgba(0, 0, 0, 0.25);
+        border-color: rgba(0, 0, 0, 0.2);
       }
-      
-      /* STATO: In corso */
-      .timeline-step.progress {
-        background: rgba(255, 255, 255, 0.9);
+
+      .progress {
+        background: #fff;
         border-color: var(--accent);
       }
-      
-      /* STATO: Da iniziare */
-      .timeline-step.todo {
+
+      .todo {
         background: rgba(255, 255, 255, 0.25);
         border-color: rgba(255, 255, 255, 0.4);
       }
-      
+
       .timeline-node:hover .timeline-step {
-        transform: scale(1.08);
+        transform: scale(1.12);
         box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
       }
-      
+
       .timeline-labels {
         display: flex;
         justify-content: space-between;
-        max-width: 820px;
-        margin: 6px auto 0;
-        font-size: 14px;
-        opacity: 0.95;
-        text-align: center;
-        line-height: 1.3;
       }
-      
-      /* label con link ma senza sottolineatura */
+
       .timeline-labels a {
-        display: block;
-        width: 90px;
-        margin: 0 auto;
+        width: 110px;
         color: var(--text);
         text-decoration: none;
-        border-bottom: none;
-        font-weight: 500;
+        border: none;
+        font-size: 14px;
+        line-height: 1.3;
       }
-      
+
       .timeline-labels a:hover {
         color: var(--accent);
       }
 
-
       @media (max-width: 480px) {
-        body { font-size: 17px; }
-        h1 { font-size: 24px; }
-        h2 { font-size: 20px; }
-        .link-card { padding: 16px 18px; }
+        .timeline-labels a {
+          font-size: 12px;
+        }
       }
     </style>
   </head>
 
   <body>
     <main class="page">
+
       <h1>Mappa dei blocchi del pacchetto</h1>
       <p>
-        Questa pagina raccoglie tutti i moduli del pacchetto “Presenza Digitale Essenziale”.
-        È una guida di lavoro: ti permette di vedere chiaramente la struttura del percorso
-        e approfondire ogni parte nei dettagli.
+        Questa pagina raccoglie tutti i moduli del pacchetto “Presenza Digitale Essenziale”
+        e mostra lo stato attuale del lavoro.
       </p>
 
+      <!-- TIMELINE CENTRATA E CLICCABILE -->
       <div class="timeline-container">
-    
-      <div class="timeline-bar">
-        <a class="timeline-node" href="posizionamento.html">
-          <div class="timeline-step progress"></div>
-        </a>
-        <a class="timeline-node" href="riorganizzazione-sito.html">
-          <div class="timeline-step todo"></div>
-        </a>
-        <a class="timeline-node" href="pagine-principali.html">
-          <div class="timeline-step todo"></div>
-        </a>
-        <a class="timeline-node" href="stile-visivo.html">
-          <div class="timeline-step progress"></div>
-        </a>
-        <a class="timeline-node" href="seo-locale.html">
-          <div class="timeline-step todo"></div>
-        </a>
-        <a class="timeline-node" href="struttura-contenuti.html">
-          <div class="timeline-step todo"></div>
-        </a>
-        <a class="timeline-node" href="guida-manutenzione.html">
-          <div class="timeline-step todo"></div>
-        </a>
-      </div>
-    
-      <div class="timeline-labels">
-        <a href="posizionamento.html">Posizionamento</a>
-        <a href="riorganizzazione-sito.html">Riorganizzazione</a>
-        <a href="pagine-principali.html">Pagine<br>principali</a>
-        <a href="stile-visivo.html">Stile<br>visivo</a>
-        <a href="seo-locale.html">SEO<br>locale</a>
-        <a href="struttura-contenuti.html">Struttura<br>contenuti</a>
-        <a href="guida-manutenzione.html">Manutenzione</a>
-      </div>
-    
-    </div>
 
+        <div class="timeline-bar">
+          <a class="timeline-node" href="posizionamento.html">
+            <div class="timeline-step progress"></div>
+          </a>
 
+          <a class="timeline-node" href="riorganizzazione-sito.html">
+            <div class="timeline-step todo"></div>
+          </a>
+
+          <a class="timeline-node" href="pagine-principali.html">
+            <div class="timeline-step todo"></div>
+          </a>
+
+          <a class="timeline-node" href="stile-visivo.html">
+            <div class="timeline-step progress"></div>
+          </a>
+
+          <a class="timeline-node" href="seo-locale.html">
+            <div class="timeline-step todo"></div>
+          </a>
+
+          <a class="timeline-node" href="struttura-contenuti.html">
+            <div class="timeline-step todo"></div>
+          </a>
+
+          <a class="timeline-node" href="guida-manutenzione.html">
+            <div class="timeline-step todo"></div>
+          </a>
+        </div>
+
+        <div class="timeline-labels">
+          <a href="posizionamento.html">Posizionamento</a>
+          <a href="riorganizzazione-sito.html">Riorganizzazione</a>
+          <a href="pagine-principali.html">Pagine<br>principali</a>
+          <a href="stile-visivo.html">Stile<br>visivo</a>
+          <a href="seo-locale.html">SEO<br>locale</a>
+          <a href="struttura-contenuti.html">Struttura<br>contenuti</a>
+          <a href="guida-manutenzione.html">Manutenzione</a>
+        </div>
+
+      </div>
 
       <h2>I 7 blocchi di lavoro</h2>
 
@@ -260,76 +253,55 @@
 
         <a class="link-card" href="posizionamento.html">
           <div class="link-card-title">1. Posizionamento e Direzione Creativa</div>
-          <div class="link-card-desc">
-            Messaggio centrale, target, identità e tono di voce.
-          </div>
+          <div class="link-card-desc">Messaggio centrale, target, identità e tono di voce.</div>
         </a>
 
         <a class="link-card" href="riorganizzazione-sito.html">
           <div class="link-card-title">2. Riorganizzazione completa del sito</div>
-          <div class="link-card-desc">
-            Architettura del sito, pulizia delle pagine, struttura chiara.
-          </div>
+          <div class="link-card-desc">Architettura del sito, pulizia delle pagine, struttura chiara.</div>
         </a>
 
         <a class="link-card" href="pagine-principali.html">
           <div class="link-card-title">3. Creazione e ottimizzazione delle pagine principali</div>
-          <div class="link-card-desc">
-            Home, About, Servizi, Projects + impostazione dei primi progetti.
-          </div>
+          <div class="link-card-desc">Home, About, Servizi, Projects + primi progetti.</div>
         </a>
 
         <a class="link-card" href="stile-visivo.html">
           <div class="link-card-title">4. Impostazione stilistica e visiva</div>
-          <div class="link-card-desc">
-            Palette, font, layout e coerenza estetica.
-          </div>
+          <div class="link-card-desc">Palette, font, layout e coerenza estetica.</div>
         </a>
 
         <a class="link-card" href="seo-locale.html">
           <div class="link-card-title">5. SEO di base per visibilità locale</div>
-          <div class="link-card-desc">
-            Elementi fondamentali per essere trovati su ricerche locali.
-          </div>
+          <div class="link-card-desc">Ottimizzazioni essenziali per essere trovati su Google.</div>
         </a>
 
         <a class="link-card" href="struttura-contenuti.html">
           <div class="link-card-title">6. Struttura per contenuti futuri</div>
-          <div class="link-card-desc">
-            Modello per progetti, articoli tematici e aggiornamenti ordinati.
-          </div>
+          <div class="link-card-desc">Modello per progetti, articoli e aggiornamenti ordinati.</div>
         </a>
 
         <a class="link-card" href="guida-manutenzione.html">
           <div class="link-card-title">7. Guida finale alla manutenzione autonoma</div>
-          <div class="link-card-desc">
-            Come aggiornare il sito senza comprometterne struttura e SEO.
-          </div>
+          <div class="link-card-desc">Come aggiornare il sito senza compromettere struttura e SEO.</div>
         </a>
+      </div>
 
-        <h2 style="margin-top: 40px;">Stato generale del progetto</h2>
-
-        <a class="link-card" href="stato-progetto.html">
-          <div class="link-card-title">Stato del progetto – avanzamento</div>
-          <div class="link-card-desc">
-            Panoramica delle attività completate, in corso e da iniziare.
-          </div>
-        </a>
-
-
+      <!-- CARD STATO PROGETTO -->
       <h2 style="margin-top: 40px;">Stato generale del progetto</h2>
 
-        <a class="link-card" href="stato-progetto.html">
-          <div class="link-card-title">Stato del progetto – avanzamento</div>
-          <div class="link-card-desc">
-            Panoramica delle attività completate, in corso e da iniziare.
-          </div>
-        </a>
+      <a class="link-card" href="stato-progetto.html">
+        <div class="link-card-title">Stato del progetto – avanzamento</div>
+        <div class="link-card-desc">
+          Panoramica delle attività completate, in corso e da iniziare.
+        </div>
+      </a>
 
-      <p class="note" style="margin-top: 22px;">
+      <p class="note" style="margin-top: 20px;">
         Torna alla pagina principale del pacchetto:
         <a href="index.html">Presenza Digitale Essenziale – € 1.000</a>
       </p>
+
     </main>
   </body>
 </html>
