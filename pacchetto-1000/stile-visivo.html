@@ -13,8 +13,8 @@
 
     <style>
       :root {
-        --bg: #8a6666; /* leggermente più scuro per migliorare il contrasto */
-        --text: #f3eded; /* più chiaro per leggibilità */
+        --bg: #8a6666;
+        --text: #f3eded;
         --accent: #e38f7b; 
       }
 
@@ -25,7 +25,7 @@
         color: var(--text);
         font-family: "Actor", sans-serif;
         line-height: 1.8;
-        font-size: 18px; /* più grande per mobile */
+        font-size: 18px;
       }
 
       .page {
@@ -49,15 +49,6 @@
         line-height: 1.4;
       }
 
-      .subtitle {
-        color: var(--accent);
-        font-weight: 700;
-        font-size: 19px;
-        margin-top: 26px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-      }
-
       ul {
         margin: 0 0 20px 1.2rem;
         padding: 0;
@@ -67,29 +58,38 @@
         margin-bottom: 10px;
       }
 
-      /* Miglioramento ancora maggiore per mobile */
+      /* NOTE (testo in fondo) */
+      .note {
+        font-size: 15px;
+        opacity: 0.9;
+      }
+
+      /* LINK coerenti con tutte le altre pagine */
+      a,
+      a:visited {
+        color: var(--text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-weight: 600;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      /* Mobile */
       @media (max-width: 480px) {
-        body {
-          font-size: 19px;
-        }
-        h1 {
-          font-size: 26px;
-        }
-        h2 {
-          font-size: 21px;
-        }
-        .subtitle {
-          font-size: 20px;
-        }
-        .page {
-          padding: 28px 16px 60px;
-        }
+        body { font-size: 19px; }
+        h1 { font-size: 26px; }
+        h2 { font-size: 21px; }
+        .page { padding: 28px 16px 60px; }
       }
     </style>
   </head>
 
   <body>
-        <main class="page">
+    <main class="page">
       <h1>Impostazione stilistica e visiva</h1>
 
       <p>
@@ -117,12 +117,8 @@
 
       <h2>Output attesi</h2>
       <ul>
-        <li>
-          Un set di regole visive di base per mantenere lo stile nel tempo.
-        </li>
-        <li>
-          Un sito che “sembra tuo” e non un template generico.
-        </li>
+        <li>Un set di regole visive di base per mantenere lo stile nel tempo.</li>
+        <li>Un sito che “sembra tuo” e non un template generico.</li>
       </ul>
 
       <p class="note">
@@ -130,11 +126,10 @@
         una linea chiara da seguire per tutte le future aggiunte.
       </p>
 
-       <p class="note" style="margin-top: 24px;">
+      <p class="note" style="margin-top: 24px;">
         Stato di avanzamento di questo blocco:
         <a href="child/stile-visivo.html">→ vedi il tracking del lavoro</a>
       </p>
-
 
       <p class="note" style="margin-top: 26px;">
         Torna alla panoramica del pacchetto:
