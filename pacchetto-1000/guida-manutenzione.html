@@ -13,8 +13,8 @@
 
     <style>
       :root {
-        --bg: #8a6666; /* leggermente più scuro per migliorare il contrasto */
-        --text: #f3eded; /* più chiaro per leggibilità */
+        --bg: #8a6666;
+        --text: #f3eded;
         --accent: #e38f7b; 
       }
 
@@ -25,14 +25,13 @@
         color: var(--text);
         font-family: "Actor", sans-serif;
         line-height: 1.8;
-        font-size: 18px; /* più grande per mobile */
+        font-size: 18px;
       }
       
       .note {
-        font-size: 14px;
-        opacity: 0.85;
+        font-size: 15px;
+        opacity: 0.9;
       }
-
 
       .page {
         max-width: 860px;
@@ -55,15 +54,6 @@
         line-height: 1.4;
       }
 
-      .subtitle {
-        color: var(--accent);
-        font-weight: 700;
-        font-size: 19px;
-        margin-top: 26px;
-        margin-bottom: 10px;
-        line-height: 1.4;
-      }
-
       ul {
         margin: 0 0 20px 1.2rem;
         padding: 0;
@@ -73,23 +63,25 @@
         margin-bottom: 10px;
       }
 
-      /* Miglioramento ancora maggiore per mobile */
+      /* LINK uniformi a tutto il pacchetto */
+      a,
+      a:visited {
+        color: var(--text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-weight: 600;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
       @media (max-width: 480px) {
-        body {
-          font-size: 19px;
-        }
-        h1 {
-          font-size: 26px;
-        }
-        h2 {
-          font-size: 21px;
-        }
-        .subtitle {
-          font-size: 20px;
-        }
-        .page {
-          padding: 28px 16px 60px;
-        }
+        body { font-size: 19px; }
+        h1 { font-size: 26px; }
+        h2 { font-size: 21px; }
+        .page { padding: 28px 16px 60px; }
       }
     </style>
   </head>
@@ -106,28 +98,16 @@
 
       <h2>Cosa facciamo in questa fase</h2>
       <ul>
-        <li>
-          Spiegazione dei passaggi base per caricare nuovi progetti.
-        </li>
-        <li>
-          Indicazioni su come pubblicare articoli tematici mantenendo lo stile definito.
-        </li>
-        <li>
-          Suggerimenti su come mantenere ordine e coerenza (cosa evitare, cosa ripetere).
-        </li>
-        <li>
-          Promemoria sui limiti del sito: cosa è meglio non toccare per non rompere struttura e SEO.
-        </li>
+        <li>Spiegazione dei passaggi base per caricare nuovi progetti.</li>
+        <li>Indicazioni su come pubblicare articoli tematici mantenendo lo stile definito.</li>
+        <li>Suggerimenti su come mantenere ordine e coerenza (cosa evitare, cosa ripetere).</li>
+        <li>Promemoria sui limiti del sito: cosa è meglio non toccare per non rompere struttura e SEO.</li>
       </ul>
 
       <h2>Output attesi</h2>
       <ul>
-        <li>
-          Una mini–documentazione pratica, scritta in modo comprensibile.
-        </li>
-        <li>
-          Maggiore autonomia nell’uso quotidiano del sito, senza dipendere sempre da terzi.
-        </li>
+        <li>Una mini–documentazione pratica, scritta in modo comprensibile.</li>
+        <li>Maggiore autonomia nell’uso quotidiano del sito, senza dipendere sempre da terzi.</li>
       </ul>
 
       <p class="note">
@@ -139,7 +119,6 @@
         Stato di avanzamento di questo blocco:
         <a href="child/manutenzione.html">→ vedi il tracking del lavoro</a>
       </p>
-
 
       <p class="note" style="margin-top: 26px;">
         Torna alla panoramica del pacchetto:
