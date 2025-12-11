@@ -67,6 +67,26 @@
         margin-bottom: 10px;
       }
 
+      /* note di servizio in fondo */
+      .note {
+        font-size: 15px;
+        opacity: 0.9;
+      }
+
+      /* stile link coerente con il pacchetto */
+      a,
+      a:visited {
+        color: var(--text);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        font-weight: 600;
+      }
+
+      a:hover {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
       /* Miglioramento ancora maggiore per mobile */
       @media (max-width: 480px) {
         body {
@@ -89,7 +109,7 @@
   </head>
 
   <body>
-        <main class="page">
+    <main class="page">
       <h1>Riorganizzazione completa del sito</h1>
 
       <p>
@@ -136,7 +156,6 @@
         Stato di avanzamento di questo blocco:
         <a href="child/riorganizzazione.html">→ vedi il tracking del lavoro</a>
       </p>
-
 
       <p class="note" style="margin-top: 26px;">
         Torna alla panoramica del pacchetto:
