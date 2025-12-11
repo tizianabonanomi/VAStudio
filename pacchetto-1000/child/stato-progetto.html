@@ -1,237 +1,119 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Stato complessivo del progetto – Presenza Digitale Essenziale</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <title>Stato del Progetto – Presenza Digitale Essenziale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #8a6666;
+      --text: #f3eded;
+      --accent: #e38f7b;
+    }
 
-    <style>
-      :root {
-        --bg: #8a6666;
-        --text: #f3eded;
-        --accent: #e38f7b;
-        --muted: #e7dcd0;
-      }
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Actor", sans-serif;
+      line-height: 1.8;
+      font-size: 18px;
+    }
 
-      body {
-        margin: 0;
-        padding: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: "Actor", sans-serif;
-        line-height: 1.8;
-        font-size: 18px;
-      }
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 70px;
+    }
 
-      .page {
-        max-width: 860px;
-        margin: 0 auto;
-        padding: 32px 18px 70px;
-      }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
 
-      h1 {
-        font-size: 26px;
-        margin-bottom: 12px;
-        font-weight: 700;
-      }
+    h2 {
+      margin-top: 36px;
+      font-size: 21px;
+      font-weight: 700;
+    }
 
-      p {
-        margin-bottom: 14px;
-      }
+    .status-block {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+    }
 
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 18px;
-        margin-top: 22px;
-      }
+    .done { color: #d1c7c0; text-decoration: line-through; }
+    .progress { color: var(--accent); font-weight: 600; }
+    .todo { opacity: 0.7; }
 
-      .block-card {
-        border-radius: 10px;
-        padding: 14px 16px;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-      }
+    a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      padding-bottom: 2px;
+    }
 
-      .block-title {
-        font-size: 17px;
-        font-weight: 700;
-        margin-bottom: 6px;
-      }
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+  </style>
+</head>
 
-      .block-desc {
-        font-size: 14px;
-        opacity: 0.9;
-        margin-bottom: 8px;
-      }
+<body>
+  <main class="page">
 
-      .status {
-        display: inline-block;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        padding: 3px 8px;
-        border-radius: 999px;
-      }
+    <h1>Stato generale del progetto</h1>
+    <p>Una visione complessiva dell’avanzamento dei 7 blocchi del pacchetto.</p>
 
-      .status-da-avviare {
-        background: rgba(0, 0, 0, 0.35);
-        color: var(--muted);
-      }
+    <h2>Avanzamento dei blocchi</h2>
 
-      .status-in-corso {
-        background: rgba(227, 143, 123, 0.18);
-        color: var(--accent);
-      }
+    <div class="status-block">
+      <strong>1. Posizionamento e Direzione Creativa</strong><br>
+      <span class="progress">In corso</span>
+    </div>
 
-      .status-completato {
-        background: rgba(255, 255, 255, 0.18);
-        color: var(--text);
-      }
+    <div class="status-block">
+      <strong>2. Riorganizzazione del sito</strong><br>
+      <span class="todo">Da iniziare</span>
+    </div>
 
-      .links {
-        margin-top: 6px;
-        font-size: 13px;
-      }
+    <div class="status-block">
+      <strong>3. Pagine principali</strong><br>
+      <span class="todo">Da iniziare</span>
+    </div>
 
-      a {
-        color: #f3eded;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-        padding-bottom: 1px;
-        transition: 0.2s ease;
-      }
+    <div class="status-block">
+      <strong>4. Stile visivo</strong><br>
+      <span class="progress">In corso</span>
+    </div>
 
-      a:hover {
-        color: var(--accent);
-        border-bottom-color: var(--accent);
-      }
+    <div class="status-block">
+      <strong>5. SEO locale</strong><br>
+      <span class="todo">Da iniziare</span>
+    </div>
 
-      .note {
-        font-size: 14px;
-        opacity: 0.85;
-        margin-top: 22px;
-      }
+    <div class="status-block">
+      <strong>6. Struttura contenuti futuri</strong><br>
+      <span class="todo">Da iniziare</span>
+    </div>
 
-      @media (max-width: 480px) {
-        body { font-size: 17px; }
-        h1 { font-size: 24px; }
-      }
-    </style>
-  </head>
+    <div class="status-block">
+      <strong>7. Guida manutenzione</strong><br>
+      <span class="todo">Da iniziare</span>
+    </div>
 
-  <body>
-    <main class="page">
-      <h1>Stato complessivo del progetto</h1>
+    <p style="margin-top: 26px;">
+      Torna alla <a href="mappa.html">mappa dei blocchi</a>
+    </p>
 
-      <p>
-        Questa pagina riassume lo stato dei 7 blocchi del pacchetto
-        “Presenza Digitale Essenziale” e collega ogni blocco alla descrizione
-        dettagliata e al relativo tracking dei lavori.
-      </p>
-
-      <div class="grid">
-
-        <div class="block-card">
-          <div class="block-title">1. Posizionamento &amp; Direzione Creativa</div>
-          <div class="block-desc">
-            Messaggio centrale, target e tono di voce.
-          </div>
-          <span class="status status-in-corso">In corso</span>
-          <div class="links">
-            <a href="posizionamento.html">Modulo</a> ·
-            <a href="child/posizionamento.html">Tracking</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">2. Riorganizzazione del sito</div>
-          <div class="block-desc">
-            Architettura, menu, pulizia dei contenuti.
-          </div>
-          <span class="status status-da-avviare">Da avviare</span>
-          <div class="links">
-            <a href="riorganizzazione-sito.html">Modulo</a> ·
-            <a href="child/riorganizzazione.html">Tracking</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">3. Pagine principali</div>
-          <div class="block-desc">
-            Home, About, Servizi, Projects e primi progetti.
-          </div>
-          <span class="status status-da-avviare">Da avviare</span>
-          <div class="links">
-            <a href="pagine-principali.html">Modulo</a> ·
-            <a href="child/pagine-principali.html">Tracking</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">4. Stile visivo</div>
-          <div class="block-desc">
-            Palette, font, layout e coerenza estetica.
-          </div>
-          <span class="status status-in-corso">In corso</span>
-          <div class="links">
-            <a href="stile-visivo.html">Modulo</a> ·
-            <a href="child/stile-visivo.html">Tracking</a> ·
-            <a href="palette.html">Palette</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">5. SEO locale</div>
-          <div class="block-desc">
-            Titoli, descrizioni e struttura leggibile da Google.
-          </div>
-          <span class="status status-da-avviare">Da avviare</span>
-          <div class="links">
-            <a href="seo-locale.html">Modulo</a> ·
-            <a href="child/seo-locale.html">Tracking</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">6. Struttura contenuti futuri</div>
-          <div class="block-desc">
-            Modello per progetti e articoli tematici.
-          </div>
-          <span class="status status-da-avviare">Da avviare</span>
-          <div class="links">
-            <a href="struttura-contenuti.html">Modulo</a> ·
-            <a href="child/struttura-contenuti.html">Tracking</a>
-          </div>
-        </div>
-
-        <div class="block-card">
-          <div class="block-title">7. Guida manutenzione & autonomia</div>
-          <div class="block-desc">
-            Come aggiornare il sito senza romperne struttura e SEO.
-          </div>
-          <span class="status status-da-avviare">Da avviare</span>
-          <div class="links">
-            <a href="guida-manutenzione.html">Modulo</a> ·
-            <a href="child/manutenzione.html">Tracking</a> ·
-            <a href="supporto.html">Pacchetti di supporto</a>
-          </div>
-        </div>
-
-      </div>
-
-      <p class="note">
-        Mappa dettagliata dei blocchi:
-        <a href="mappa.html">→ vai alla mappa del pacchetto</a>
-      </p>
-
-      <p class="note">
-        Torna al pacchetto principale:
-        <a href="index.html">→ Presenza Digitale Essenziale – € 1.000</a>
-      </p>
-
-    </main>
-  </body>
+  </main>
+</body>
 </html>
