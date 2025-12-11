@@ -15,9 +15,7 @@
       --muted: #f3ededb0;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -34,9 +32,7 @@
       padding: 2.5rem 1.25rem 3rem;
     }
 
-    header {
-      margin-bottom: 1.75rem;
-    }
+    header { margin-bottom: 1.75rem; }
 
     .back-link {
       font-size: 0.85rem;
@@ -50,13 +46,7 @@
       opacity: 0.9;
     }
 
-    .back-link span {
-      transform: translateY(-1px);
-    }
-
-    .back-link:hover {
-      opacity: 1;
-    }
+    .back-link:hover { opacity: 1; }
 
     h1 {
       margin: 0.75rem 0 0.35rem;
@@ -68,7 +58,7 @@
     .subtitle {
       font-size: 0.95rem;
       color: var(--muted);
-      max-width: 650px;
+      max-width: 700px;
     }
 
     .legend {
@@ -91,21 +81,12 @@
       width: 9px;
       height: 9px;
       border-radius: 999px;
-      background: var(--accent);
       opacity: 0.9;
     }
 
-    .dot.done {
-      background: #9ad7a7;
-    }
-
-    .dot.in-progress {
-      background: #f5d27a;
-    }
-
-    .dot.next {
-      background: #f3a6a6;
-    }
+    .dot.done { background: #9ad7a7; }
+    .dot.in-progress { background: #f5d27a; }
+    .dot.next { background: #f3a6a6; }
 
     .cards {
       margin-top: 2rem;
@@ -129,7 +110,6 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 0.75rem;
     }
 
     .card-title {
@@ -146,7 +126,6 @@
       border-radius: 999px;
       border: 1px solid rgba(243, 237, 237, 0.45);
       white-space: nowrap;
-      align-self: flex-start;
     }
 
     .status.done {
@@ -162,11 +141,6 @@
     .status.next {
       background: rgba(243, 166, 166, 0.15);
       border-color: rgba(243, 166, 166, 0.9);
-    }
-
-    .status.idea {
-      background: rgba(227, 143, 123, 0.08);
-      border-style: dashed;
     }
 
     .card-body {
@@ -194,164 +168,156 @@
       color: var(--muted);
       max-width: 680px;
     }
-
-    @media (min-width: 900px) {
-      h1 {
-        font-size: 2.1rem;
-      }
-
-      .page {
-        padding-top: 3rem;
-      }
-    }
   </style>
 </head>
 
 <body>
   <div class="page">
+
     <header>
-      <a href="../index.html" class="back-link">
-        <span>←</span><span>torna alla panoramica</span>
+      <a href="../mappa.html" class="back-link">
+        <span>←</span><span>torna alla mappa</span>
       </a>
+
       <h1>Stato del progetto</h1>
       <p class="subtitle">
-        Riepilogo ad alto livello dell’avanzamento di <strong>Presenza Digitale Essenziale</strong>:
-        cosa è già pronto, cosa stiamo rifinendo e quali sono i prossimi step di marketing e brand.
+        Riepilogo dell’avanzamento dei 7 blocchi del pacchetto
+        <strong>Presenza Digitale Essenziale</strong>.
+        Panoramica chiara di ciò che è completato, in corso e in arrivo.
       </p>
 
       <div class="legend">
         <span class="legend-badge"><span class="dot done"></span> completato</span>
         <span class="legend-badge"><span class="dot in-progress"></span> in corso</span>
-        <span class="legend-badge"><span class="dot next"></span> prossimo step</span>
+        <span class="legend-badge"><span class="dot next"></span> da avviare</span>
       </div>
     </header>
 
     <main class="cards">
-      <!-- 1. Fondamenta di brand -->
-      <article class="card">
-        <div class="card-header">
-          <div class="card-title">Fondamenta di brand</div>
-          <div class="status done">Completato</div>
-        </div>
-        <div class="card-body">
-          <strong>Cosa è definito:</strong>
-          <ul class="list">
-            <li>Posizionamento: consulenza premium, essenziale e concreta.</li>
-            <li>Target: founder, solopreneur, micro-imprese in fase di validazione.</li>
-            <li>Promessa: “meno caos, più chiarezza digitale”.</li>
-            <li>Tono di voce: diretto, competente, zero fuffa.</li>
-          </ul>
-        </div>
-      </article>
 
-      <!-- 2. Identità visiva di base -->
+      <!-- 1. Posizionamento -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Identità visiva</div>
-          <div class="status done">Completato</div>
-        </div>
-        <div class="card-body">
-          <strong>Elementi pronti per l’uso:</strong>
-          <ul class="list">
-            <li>Palette colore (bg, accent, neutri) già applicata al sito.</li>
-            <li>Font principale: Actor (leggibile, pulito, senza fronzoli).</li>
-            <li>Stile card/moduli riutilizzabile su tutte le pagine.</li>
-            <li>Direzione: minimal, elegante, leggermente warm.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- 3. Sito one-page / struttura -->
-      <article class="card">
-        <div class="card-header">
-          <div class="card-title">Sito & struttura</div>
+          <div class="card-title">1. Posizionamento</div>
           <div class="status in-progress">In corso</div>
         </div>
         <div class="card-body">
-          <strong>Stato attuale:</strong>
+          <strong>Focus del blocco:</strong>
           <ul class="list">
-            <li>Home / landing online con sezioni principali già impostate.</li>
-            <li>Sezione “Chi sono” e proposta di valore sintetica pronte.</li>
-            <li>Pagina stato-progetto (questa), per trasparenza sul lavoro.</li>
-            <li><em>Da rifinire:</em> microcopy CTA + collegamenti a portfolio / case study.</li>
+            <li>Chiarezza su identità: Architettura + Interior & Lighting.</li>
+            <li>Target: seconde case, hospitality, clienti extra-Carloforte.</li>
+            <li>Definizione tono di voce: metodico, affidabile, creativo.</li>
+            <li>Messaggio centrale in via di affinamento.</li>
           </ul>
         </div>
       </article>
 
-      <!-- 4. Offerta & pacchetti -->
+      <!-- 2. Riorganizzazione sito -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Offerta & pacchetti</div>
+          <div class="card-title">2. Riorganizzazione sito</div>
+          <div class="status next">Da avviare</div>
+        </div>
+        <div class="card-body">
+          <strong>Cosa comprende:</strong>
+          <ul class="list">
+            <li>Pulizia pagine duplicate e contenuti obsoleti.</li>
+            <li>Struttura essenziale e ordinata.</li>
+            <li>Navigazione chiara per utenti non tecnici.</li>
+            <li>Preparazione sezioni per progetti e articoli.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 3. Pagine principali -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">3. Pagine principali</div>
+          <div class="status next">Da avviare</div>
+        </div>
+        <div class="card-body">
+          <strong>Pagine previste:</strong>
+          <ul class="list">
+            <li>Home: messaggio forte e percezione professionale.</li>
+            <li>About: metodo, valori, identità professionale.</li>
+            <li>Servizi: 3 macro aree (Architettura / Interior & Lighting / Pratiche edilizie).</li>
+            <li>Projects: impostazione dei primi 3 progetti.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- 4. Stile visivo -->
+      <article class="card">
+        <div class="card-header">
+          <div class="card-title">4. Stile visivo</div>
           <div class="status in-progress">In corso</div>
         </div>
         <div class="card-body">
-          <strong>Linee guida definite:</strong>
+          <strong>Elementi già attivi:</strong>
           <ul class="list">
-            <li>Servizio core: audit + strategia essenziale di presenza digitale.</li>
-            <li>Focalizzazione su: sito snello, messaggi chiari, primi funnel semplici.</li>
-            <li>Struttura pacchetti (base / pro / su misura) disegnata a grandi linee.</li>
-            <li><em>Da chiudere:</em> naming definitivo dei pacchetti + prezzi pubblici.</li>
+            <li>Palette mediterranea contemporanea.</li>
+            <li>Font Actor applicato all’intero sistema.</li>
+            <li>Componenti visuali: card, moduli, layout minimalista.</li>
+            <li>Da completare: coerenza con immagini e social.</li>
           </ul>
         </div>
       </article>
 
-      <!-- 5. Contenuti & lead magnet -->
+      <!-- 5. SEO locale -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Contenuti & lead magnet</div>
-          <div class="status next">Prossimo step</div>
+          <div class="card-title">5. SEO locale</div>
+          <div class="status next">Da avviare</div>
         </div>
         <div class="card-body">
-          <strong>Direzione concordata:</strong>
+          <strong>Impostazione prevista:</strong>
           <ul class="list">
-            <li>Mini–guida / checklist su “Presenza digitale minima ma efficace”.</li>
-            <li>Formato breve, molto pratico, scaricabile dal sito.</li>
-            <li>Integrazione con form di contatto / newsletter essenziale.</li>
-            <li>Da definire: titolo definitivo e flusso email post-download.</li>
+            <li>Ottimizzazione titoli e meta descriptions.</li>
+            <li>Gerarchia H1–H2 pulita e leggibile.</li>
+            <li>Focus keyword: “architetto Carloforte”, “interior design Sardegna”.</li>
+            <li>Check indicizzazione e performance.</li>
           </ul>
         </div>
       </article>
 
-      <!-- 6. Presenza LinkedIn -->
+      <!-- 6. Struttura contenuti futuri -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Presenza LinkedIn</div>
-          <div class="status next">Prossimo step</div>
+          <div class="card-title">6. Contenuti futuri</div>
+          <div class="status next">Da avviare</div>
         </div>
         <div class="card-body">
-          <strong>Linee guida operative:</strong>
+          <strong>Cosa includerà:</strong>
           <ul class="list">
-            <li>Ottimizzazione profilo come “hub” verso il sito.</li>
-            <li>Post focalizzati su casi reali, micro–audit e consigli concreti.</li>
-            <li>Call to action morbide verso call conoscitive o audit.</li>
-            <li>Piano editoriale light (1–2 post a settimana, formato riutilizzabile).</li>
+            <li>Modello per nuovi progetti (layout standard).</li>
+            <li>Template articoli tematici (es. “la veranda come luogo emozionale”).</li>
+            <li>Nomenclatura progetti (es. “TB House”).</li>
           </ul>
         </div>
       </article>
 
-      <!-- 7. Backend operativo -->
+      <!-- 7. Guida manutenzione -->
       <article class="card">
         <div class="card-header">
-          <div class="card-title">Backend operativo</div>
-          <div class="status idea">In bozza</div>
+          <div class="card-title">7. Guida manutenzione</div>
+          <div class="status next">Da avviare</div>
         </div>
         <div class="card-body">
-          <strong>Cosa è stato mappato:</strong>
+          <strong>Cosa prevederà:</strong>
           <ul class="list">
-            <li>Template di discovery call / intake form per nuovi clienti.</li>
-            <li>Schema base per preventivi e proposte PDF coerenti con il brand.</li>
-            <li>Checklist interna per consegna: sito + messaggi + micro–funnel.</li>
-            <li>Da tradurre in documenti pronti all’uso e automazioni minime.</li>
+            <li>Come caricare progetti e articoli.</li>
+            <li>Come mantenere ordine e coerenza.</li>
+            <li>Errori da evitare per non compromettere SEO e struttura.</li>
           </ul>
         </div>
       </article>
+
     </main>
 
     <p class="footnote">
-      Questa pagina è un riepilogo “da tavolo di lavoro”: i contenuti possono evolvere
-      man mano che il progetto avanza. È pensata per avere sempre a colpo d’occhio
-      cosa è già solido e cosa stiamo costruendo adesso.
+      Questa pagina mostra lo stato del lavoro in tempo reale, con aggiornamenti per ogni blocco del pacchetto.
     </p>
+
   </div>
 </body>
 </html>
