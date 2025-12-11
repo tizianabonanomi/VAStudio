@@ -104,56 +104,74 @@
 
       /* TIMELINE ORIZZONTALE */
       .timeline-container {
-        margin: 30px 0 34px;
-        padding: 0 4px;
-      }
+  margin: 36px 0 40px;
+  padding: 0 10px;
+}
 
-      .timeline-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        margin: 0 auto 10px;
-        max-width: 820px;
-      }
+.timeline-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto 10px;
+  max-width: 820px;
+}
 
-      .timeline-bar::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.6);
-        transform: translateY(-50%);
-      }
+.timeline-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-50%);
+  border-radius: 2px;
+}
 
-      .timeline-step {
-        position: relative;
-        z-index: 2;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background: var(--accent);
-        border: 2px solid rgba(0, 0, 0, 0.15);
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
-      }
+.timeline-step {
+  position: relative;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: 2px solid rgba(255,255,255,0.5);
+}
 
-      .timeline-labels {
-        display: flex;
-        justify-content: space-between;
-        max-width: 820px;
-        margin: 0 auto;
-        font-size: 13px;
-        opacity: 0.9;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-      }
+/* STATO: Completato */
+.timeline-step.done {
+  background: var(--accent);
+  border-color: rgba(0,0,0,0.25);
+}
 
-      .timeline-labels span {
-        text-align: center;
-        min-width: 30px;
-      }
+/* STATO: In corso */
+.timeline-step.progress {
+  background: rgba(255,255,255,0.9);
+  border-color: var(--accent);
+}
+
+/* STATO: Da iniziare */
+.timeline-step.todo {
+  background: rgba(255,255,255,0.25);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  max-width: 820px;
+  margin: 6px auto 0;
+  font-size: 14px;
+  opacity: 0.95;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.timeline-label {
+  width: 90px;
+}
+
 
       @media (max-width: 480px) {
         body { font-size: 17px; }
@@ -174,26 +192,29 @@
       </p>
 
       <div class="timeline-container">
-        <div class="timeline-bar">
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-          <div class="timeline-step"></div>
-        </div>
 
-        <div class="timeline-labels">
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>7</span>
-        </div>
-      </div>
+  <div class="timeline-bar">
+    <div class="timeline-step progress"></div>
+    <div class="timeline-step todo"></div>
+    <div class="timeline-step todo"></div>
+    <div class="timeline-step todo"></div>
+    <div class="timeline-step todo"></div>
+    <div class="timeline-step todo"></div>
+    <div class="timeline-step todo"></div>
+  </div>
+
+  <div class="timeline-labels">
+    <div class="timeline-label">Posizionamento</div>
+    <div class="timeline-label">Riorganizzazione</div>
+    <div class="timeline-label">Pagine<br>principali</div>
+    <div class="timeline-label">Stile<br>visivo</div>
+    <div class="timeline-label">SEO<br>Locale</div>
+    <div class="timeline-label">Struttura<br>contenuti</div>
+    <div class="timeline-label">Manutenzione</div>
+  </div>
+
+</div>
+
 
       <h2>I 7 blocchi di lavoro</h2>
 
