@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Victoria Archontis STUDIO | Architettura & Interior in Sud Sardegna</title>
+  <title>victoriaarchontis STUDIO | Architettura & Interior in Sud Sardegna</title>
   <meta name="description" content="Studio di architettura e interior & lighting design per seconde case e ospitalità in Sud Sardegna. Metodo chiaro, progetto consapevole, gestione integrata fino al cantiere.">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -20,28 +20,17 @@
       --max: 980px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
+      margin: 0;
       font-family: 'Inter', Arial, sans-serif;
-    }
-    
-    h1, h2 {
-      font-family: 'Source Serif 4', serif;
-      letter-spacing: 0.01em;
-    }
-    
-    .brand {
-      font-family: 'Inter', Arial, sans-serif;
+      background: var(--sand);
+      color: var(--brown);
+      line-height: 1.65;
     }
 
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
     /* HEADER */
     header {
@@ -61,6 +50,25 @@
       align-items: center;
     }
 
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 22px;
+      height: auto;
+      display: block;
+    }
+
+    .brand-name {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
     .menu a {
       margin-left: 18px;
       font-size: 12px;
@@ -69,32 +77,23 @@
       text-transform: uppercase;
     }
 
-    .menu a:hover {
-      color: var(--raspberry);
-    }
+    .menu a:hover { color: var(--raspberry); }
 
     /* HERO */
     .hero {
       max-width: 760px;
       margin: 0 auto;
       padding: 96px 22px 110px;
+      padding-left: 64px; /* asimmetria controllata */
     }
 
-    .brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-}
-
-.brand-logo {
-  width: 20px;
-  height: auto;
-  display: block;
-}
-
-
+    h1 {
+      font-family: 'Source Serif 4', serif;
+      font-size: 44px;
+      font-weight: 500;
+      letter-spacing: 0.005em;
+      margin: 0 0 16px;
+    }
 
     .tagline {
       font-weight: 300;
@@ -112,7 +111,7 @@
     .cta {
       display: inline-block;
       padding: 12px 28px;
-      border: 1px solid var(--terracotta);
+      border: 1.5px solid var(--terracotta);
       font-size: 12px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -124,13 +123,9 @@
     }
 
     /* SECTIONS */
-    section {
-      padding: 86px 22px;
-    }
+    section { padding: 86px 22px; }
 
-    .soft {
-      background: var(--soft);
-    }
+    .soft { background: var(--soft); }
 
     .wrap {
       max-width: var(--max);
@@ -138,9 +133,11 @@
     }
 
     h2 {
+      font-family: 'Source Serif 4', serif;
       font-size: 28px;
       font-weight: 500;
       margin: 0 0 16px;
+      letter-spacing: 0.01em;
     }
 
     h3 {
@@ -171,12 +168,10 @@
     }
 
     @media (max-width: 860px) {
-      .grid3 {
-        grid-template-columns: 1fr;
-      }
-      h1 {
-        font-size: 34px;
-      }
+      .grid3 { grid-template-columns: 1fr; }
+      .hero { padding-left: 22px; } /* niente offset su mobile */
+      h1 { font-size: 34px; }
+      .brand-name { letter-spacing: 0.10em; }
     }
 
     /* FOOTER */
@@ -204,14 +199,11 @@
 
 <header>
   <div class="nav">
-   <div class="brand">
-  <img 
-    src="images/logo-symbol.png"
-    alt=""
-    class="brand-logo"
-  >
-  <span>victoriaarchontis STUDIO</span>
-</div>
+    <div class="brand">
+      <!-- Metti il file qui: docs/images/logo-symbol.png -->
+      <img src="images/logo-symbol.png" alt="" class="brand-logo">
+      <span class="brand-name">victoriaarchontis STUDIO</span>
+    </div>
 
     <nav class="menu">
       <a href="about.html">About</a>
@@ -284,7 +276,7 @@
 
 <footer>
   <div class="footer-wrap">
-    <div class="small">Victoria Archontis STUDIO</div>
+    <div class="small">victoriaarchontis STUDIO</div>
     <p>Architettura · Interior & Lighting · Gestione integrata del progetto</p>
   </div>
 </footer>
