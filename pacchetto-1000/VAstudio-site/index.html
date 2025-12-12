@@ -40,6 +40,25 @@
     @media (max-width:860px){.grid3{grid-template-columns:1fr}}
     footer{background:var(--plaster);padding:52px 0;border-top:1px solid rgba(90,68,53,.18)}
     .small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300}
+
+    /* FOTO HOME: controllata, non dominante */
+.home-photo {
+  max-width: 520px;      /* limite visivo */
+  height: 320px;         /* altezza fissa */
+  overflow: hidden;      /* taglia l'eccesso */
+  margin: 32px 0 16px;
+  border: 1px solid rgba(90,68,53,.18);
+  background: #E7DCCF;
+}
+
+.home-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* CROPPING AUTOMATICO */
+  object-position: center top; /* viso leggermente in alto */
+  display: block;
+}
+
   </style>
 </head>
 
@@ -74,13 +93,13 @@
 
     <!-- ✅ 4) FOTO HOME: QUI (sotto H1 + testo) -->
     <!-- Carica la versione "ambientata" e metti qui il suo URL/file -->
-    <div class="photo">
-      <img
-        src="images/victoria-archontis-architetto-sud-sardegna.jpg"
-        alt="Victoria Archontis, architetta specializzata in seconde case e interior design in Sud Sardegna"
-        loading="eager"
-      >
-    </div>
+   <div class="photo home-photo">
+  <img
+    src="images/victoria-archontis-architetto-sud-sardegna.jpg"
+    alt="Victoria Archontis, architetta specializzata in seconde case e interior design in Sud Sardegna"
+  >
+</div>
+
 
     <!-- 5) CTA -->
     <a class="cta" href="#contatti">Parliamo del tuo progetto</a>
