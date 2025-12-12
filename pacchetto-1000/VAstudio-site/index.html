@@ -1,145 +1,53 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>victoriaarchontis STUDIO | Architettura & Interior in Sud Sardegna</title>
-  <meta name="description" content="Studio di architettura e interior & lighting design per seconde case e hospitality in Sud Sardegna. Metodo chiaro, progetto consapevole, gestione integrata fino al cantiere." />
-  <meta name="robots" content="index,follow" />
-
-  <meta property="og:title" content="victoriaarchontis STUDIO" />
-  <meta property="og:description" content="Architettura, Interior & Lighting e gestione integrata del progetto in Sud Sardegna. Approccio metodico e creativo." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Studio di architettura e interior & lighting design per seconde case e hospitality in Sud Sardegna. Approccio metodico e creativo, gestione integrata fino al cantiere.">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --sand:#B9A998;
-      --soft:#DCCCB8;
-      --plaster:#E7DCCF;
-      --brown:#5A4435;
-      --terracotta:#E38F7B;
-      --raspberry:#CD3C36;
+      --sand:#B9A998; --soft:#DCCCB8; --plaster:#E7DCCF;
+      --brown:#5A4435; --terracotta:#E38F7B; --raspberry:#CD3C36;
       --max:980px;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Inter, Arial, sans-serif;
-      background:var(--sand);
-      color:var(--brown);
-      line-height:1.65;
-    }
-    a{color:inherit}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 22px}
-    header{
-      position:sticky; top:0; z-index:10;
-      background:rgba(185,169,152,.92);
-      backdrop-filter:saturate(120%) blur(6px);
-      border-bottom:1px solid rgba(90,68,53,.18);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:16px 0;
-    }
-    .brand{
-      font-weight:500; letter-spacing:.02em; text-decoration:none;
-    }
-    .menu a{
-      text-decoration:none; margin-left:18px;
-      font-weight:300; letter-spacing:.06em; text-transform:uppercase; font-size:12px;
-    }
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--sand);color:var(--brown);line-height:1.65}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+    header{position:sticky;top:0;background:rgba(185,169,152,.92);border-bottom:1px solid rgba(90,68,53,.18)}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+    .brand{font-weight:500;letter-spacing:.02em;text-decoration:none;color:inherit}
+    .menu a{margin-left:18px;text-decoration:none;font-weight:300;letter-spacing:.06em;text-transform:uppercase;font-size:12px;color:inherit}
     .menu a:hover{color:var(--raspberry)}
-    .hero{padding:72px 0 90px}
-    .hero-grid{
-      display:grid; gap:42px;
-      grid-template-columns: 1.1fr .9fr;
-      align-items:center;
-    }
-    @media (max-width:860px){ .hero-grid{grid-template-columns:1fr} }
-    h1{margin:0 0 10px; font-size:42px; letter-spacing:.02em; font-weight:500}
-    .tagline{
-      margin:0 0 26px;
-      font-weight:300; letter-spacing:.18em; text-transform:lowercase;
-    }
-    p{margin:0 0 18px; font-weight:300; max-width:64ch}
-    .cta{
-      display:inline-block; margin-top:18px;
-      padding:12px 26px;
-      border:1px solid var(--terracotta);
-      text-decoration:none;
-      font-size:12px; letter-spacing:.12em; text-transform:uppercase;
-    }
-    .cta:hover{background:var(--terracotta); color:#fff}
-    .photo{
-      height:420px; width:100%;
-      background:var(--plaster);
-      border:1px solid rgba(90,68,53,.18);
-      display:flex; align-items:center; justify-content:center;
-      font-size:12px; letter-spacing:.12em; text-transform:uppercase;
-    }
+    .hero{padding:70px 0 90px}
+    h1{margin:0 0 10px;font-size:42px;font-weight:500;letter-spacing:.02em}
+    .tagline{margin:0 0 22px;font-weight:300;letter-spacing:.18em;text-transform:lowercase}
+    p{margin:0 0 18px;font-weight:300;max-width:70ch}
+    .cta{display:inline-block;margin-top:14px;padding:12px 26px;border:1px solid var(--terracotta);text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:inherit}
+    .cta:hover{background:var(--terracotta);color:#fff}
+    .photo{width:100%;max-width:560px;background:var(--plaster);border:1px solid rgba(90,68,53,.18);margin:28px 0 10px}
+    .photo img{display:block;width:100%;height:auto}
     .section{padding:86px 0}
     .soft{background:var(--soft)}
-    h2{margin:0 0 16px; font-size:28px; font-weight:500; letter-spacing:.02em}
-    .rule{width:44px; height:1px; background:var(--brown); margin:24px 0 34px}
-    .grid3{
-      display:grid; gap:44px;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media (max-width:860px){ .grid3{grid-template-columns:1fr} }
-    h3{
-      margin:0 0 10px;
-      font-size:14px;
-      font-weight:400;
-      letter-spacing:.10em;
-      text-transform:uppercase;
-    }
-    .mini{font-size:14px; opacity:.92}
-    .pill{
-      display:inline-block; padding:8px 14px;
-      border:1px solid rgba(90,68,53,.25);
-      margin:10px 10px 0 0;
-      font-size:12px; letter-spacing:.08em; text-transform:uppercase; font-weight:300;
-      text-decoration:none;
-    }
-    .pill:hover{border-color:var(--raspberry); color:var(--raspberry)}
-    .projects{
-      display:grid; gap:18px;
-      grid-template-columns: repeat(3, 1fr);
-      margin-top:20px;
-    }
-    @media (max-width:860px){ .projects{grid-template-columns:1fr} }
-    .proj{
-      height:220px; background:var(--plaster);
-      border:1px solid rgba(90,68,53,.18);
-      display:flex; align-items:center; justify-content:center;
-      font-size:12px; letter-spacing:.12em; text-transform:uppercase;
-      text-decoration:none;
-    }
-    .proj:hover{outline:2px solid rgba(227,143,123,.55)}
-    footer{
-      background:var(--plaster);
-      padding:52px 0;
-      border-top:1px solid rgba(90,68,53,.18);
-      font-size:14px;
-    }
-    .cols{
-      display:grid; gap:18px;
-      grid-template-columns: 1.3fr .7fr;
-    }
-    @media (max-width:860px){ .cols{grid-template-columns:1fr} }
-    .small{font-size:12px; letter-spacing:.08em; text-transform:uppercase; font-weight:300}
+    h2{margin:0 0 16px;font-size:28px;font-weight:500;letter-spacing:.02em}
+    h3{margin:0 0 10px;font-size:14px;font-weight:400;letter-spacing:.10em;text-transform:uppercase}
+    .rule{width:44px;height:1px;background:var(--brown);margin:24px 0 34px}
+    .grid3{display:grid;gap:44px;grid-template-columns:repeat(3,1fr)}
+    @media (max-width:860px){.grid3{grid-template-columns:1fr}}
+    footer{background:var(--plaster);padding:52px 0;border-top:1px solid rgba(90,68,53,.18)}
+    .small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300}
   </style>
 </head>
 
 <body>
-
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">victoriaarchontis STUDIO</a>
-    <nav class="menu" aria-label="Navigazione principale">
+    <nav class="menu">
       <a href="about.html">About</a>
       <a href="servizi.html">Servizi</a>
       <a href="progetti.html">Progetti</a>
@@ -150,47 +58,39 @@
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-  <div class="hero-content">
+  <section class="wrap hero">
+
+    <!-- 1) H1 -->
     <h1>Architettura & Interior in Sud Sardegna</h1>
+
+    <!-- 2) Tagline -->
+    <div class="tagline">methodic creativity</div>
+
+    <!-- 3) Paragrafo posizionamento -->
     <p>
-      Progetti per seconde case e ospitalità, con un approccio
-      metodico e creativo che accompagna dall’idea al cantiere.
+      Progetti per seconde case e ospitalità, pensati anche per chi vive lontano:
+      un metodo chiaro per prendere decisioni solide e mantenere coerenza dall’idea al cantiere.
     </p>
-  </div>
 
-  <div class="hero-image">
-    <img 
-      src="/images/victoria-archontis-architetto-sud-sardegna.jpg"
-      alt="Victoria Archontis, architetta specializzata in seconde case e interior design in Sud Sardegna"
-      loading="eager"
-    >
-  </div>
-</section>
-
-  <!-- POSIZIONAMENTO / DIREZIONE -->
-  <section class="section soft">
-    <div class="wrap">
-      <h2>Un messaggio chiaro, un percorso guidato</h2>
-      <div class="rule"></div>
-      <p>
-        Lavoro con uno stile mediterraneo contemporaneo: materiali, luce e proporzioni al servizio della vita reale.
-        Il mio obiettivo è aiutarti a prendere decisioni solide, con un progetto comprensibile anche se non sei “del settore”.
-      </p>
-
-      <a class="pill" href="about.html">Metodo & valori</a>
-      <a class="pill" href="servizi.html">Cosa include il percorso</a>
-      <a class="pill" href="progetti.html">Vedi i progetti</a>
+    <!-- ✅ 4) FOTO HOME: QUI (sotto H1 + testo) -->
+    <!-- Carica la versione "ambientata" e metti qui il suo URL/file -->
+    <div class="photo">
+      <img
+        src="images/victoria-archontis-architetto-sud-sardegna.jpg"
+        alt="Victoria Archontis, architetta specializzata in seconde case e interior design in Sud Sardegna"
+        loading="eager"
+      >
     </div>
+
+    <!-- 5) CTA -->
+    <a class="cta" href="#contatti">Parliamo del tuo progetto</a>
+
   </section>
 
-  <!-- COSA FACCIO (3 macro-aree) -->
-  <section class="section">
+  <section class="section soft">
     <div class="wrap">
       <h2>Tre aree, una regia unica</h2>
       <div class="rule"></div>
-
       <div class="grid3">
         <div>
           <h3>Architettura</h3>
@@ -198,55 +98,26 @@
         </div>
         <div>
           <h3>Interior & Lighting</h3>
-          <p>Materiali, colori e luce per comfort, atmosfera e identità degli ambienti.</p>
+          <p>Materiali e luce per comfort, atmosfera e identità degli ambienti.</p>
         </div>
         <div>
           <h3>Gestione integrata</h3>
-          <p>Pratiche e coordinamento del percorso: chiarezza, scelte consapevoli, coerenza fino al cantiere.</p>
+          <p>Pratiche e coordinamento del percorso: chiarezza e coerenza fino al cantiere.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEO/STRUCTURE FOR FUTURE CONTENT (accenno soft) -->
-  <section class="section soft">
-    <div class="wrap">
-      <h2>Progetti che crescono nel tempo</h2>
-      <div class="rule"></div>
-      <p>
-        La sezione progetti è strutturata per aggiunte rapide e ordinate. È pronta anche per articoli tematici brevi
-        (es. “la veranda come luogo emozionale”), utili per chiarire il metodo e migliorare la visibilità organica.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROGETTI preview -->
-  <section class="section">
-    <div class="wrap">
-      <h2>Progetti</h2>
-      <div class="rule"></div>
-      <p>Una selezione iniziale: Calalunga, Piazza Pegli, Spalmatore.</p>
-
-      <div class="projects">
-        <a class="proj" href="progetti.html#calalunga">Calalunga</a>
-        <a class="proj" href="progetti.html#piazza-pegli">Piazza Pegli</a>
-        <a class="proj" href="progetti.html#spalmatore">Spalmatore</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATTI -->
-  <section class="section soft" id="contatti">
+  <section class="section" id="contatti">
     <div class="wrap">
       <h2>Contatti</h2>
       <div class="rule"></div>
       <p>
-        Se vuoi capire se il mio approccio è adatto al tuo progetto (seconda casa o hospitality),
-        scrivimi: ti rispondo con le prime informazioni utili e i prossimi passi.
+        Se vuoi capire se il mio approccio è adatto al tuo progetto, scrivimi.
       </p>
       <p>
-        Email: <a href="mailto:info@victoriaarchontis.com">info@victoriaarchontis.com</a><br>
-        Telefono: <a href="tel:+39XXXXXXXXXX">+39 …</a>
+        Email: <a href="mailto:info@victoriarchontistudio.it">info@victoriarchontistudio.it</a><br>
+        Telefono: <a href="tel:+393481498583">+39 348 1498583</a>
       </p>
     </div>
   </section>
@@ -254,17 +125,10 @@
 </main>
 
 <footer>
-  <div class="wrap cols">
-    <div>
-      <div class="small">victoriaarchontis STUDIO</div>
-      <p>Architettura · Interior & Lighting · Gestione integrata del progetto</p>
-    </div>
-    <div>
-      <div class="small">Dati</div>
-      <p>P. IVA …<br>© 2025</p>
-    </div>
+  <div class="wrap">
+    <div class="small">victoriaarchontis STUDIO</div>
+    <p>Architettura · Interior & Lighting · Gestione integrata del progetto</p>
   </div>
 </footer>
-
 </body>
 </html>
