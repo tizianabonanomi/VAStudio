@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>victoriaarchontis STUDIO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font suggerito (fallback se Supersite non lo supporta) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --sand: #B9A998;
+      --soft-clay: #DCCCB8;
+      --light-plaster: #E7DCCF;
+      --brown: #5A4435;
+      --terracotta: #E38F7B;
+      --raspberry: #CD3C36;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background-color: var(--sand);
+      color: var(--brown);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+      margin: 0 0 24px 0;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 400;
+    }
+
+    p {
+      max-width: 640px;
+      margin-bottom: 24px;
+      font-weight: 300;
+    }
+
+    .tagline {
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: lowercase;
+      margin-bottom: 40px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 28px;
+      border: 1px solid var(--terracotta);
+      color: var(--brown);
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .cta:hover {
+      background-color: var(--terracotta);
+      color: #fff;
+    }
+
+    section {
+      margin-bottom: 120px;
+    }
+
+    .soft {
+      background-color: var(--soft-clay);
+      padding: 80px 24px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 48px;
+      margin-top: 48px;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background-color: var(--brown);
+      margin: 32px 0;
+    }
+
+    footer {
+      background-color: var(--light-plaster);
+      padding: 48px 24px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="container">
+    <h1>victoriaarchontis STUDIO</h1>
+    <div class="tagline">methodic creativity</div>
+
+    <p>
+      Architettura, interni e gestione del progetto con un approccio
+      misurato, consapevole e orientato alle persone.
+    </p>
+
+    <a href="#contatti" class="cta">Contattami</a>
+  </section>
+
+  <!-- CHI SONO -->
+  <section class="soft">
+    <div class="container">
+      <h2>Chi sono</h2>
+      <div class="divider"></div>
+
+      <p>
+        Sono un’ingegnera-architetta e accompagno i clienti nelle scelte
+        architettoniche e di interior design, trasformando idee e necessità
+        in soluzioni concrete, funzionali e sostenibili nel tempo.
+      </p>
+
+      <p>
+        Il mio lavoro si basa sull’ascolto, sulla chiarezza e su un metodo
+        che riduce l’incertezza lungo tutto il percorso progettuale.
+      </p>
+    </div>
+  </section>
+
+  <!-- COSA FACCIO -->
+  <section class="container">
+    <h2>Cosa faccio</h2>
+    <div class="divider"></div>
+
+    <div class="grid-3">
+      <div>
+        <h3>Architettura</h3>
+        <p>
+          Progetti architettonici e ristrutturazioni pensati per migliorare
+          lo spazio e il modo di viverlo.
+        </p>
+      </div>
+
+      <div>
+        <h3>Interior & Lighting</h3>
+        <p>
+          Scelte di materiali, colori e luce guidate dall’equilibrio tra
+          estetica, funzione e comfort.
+        </p>
+      </div>
+
+      <div>
+        <h3>Project Management</h3>
+        <p>
+          Coordinamento e supporto decisionale per mantenere coerenza tra
+          progetto, tempi e realizzazione.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COME LAVORO -->
+  <section class="soft">
+    <div class="container">
+      <h2>Come lavoro</h2>
+      <div class="divider"></div>
+
+      <p>
+        Ogni progetto è diverso, ma il mio metodo segue alcuni principi
+        costanti: ascolto, analisi del contesto, progetto chiaro e
+        accompagnamento nelle scelte principali.
+      </p>
+
+      <p>
+        Un approccio che permette di affrontare il percorso progettuale
+        con maggiore consapevolezza e serenità.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section class="container" id="contatti">
+    <h2>Contatti</h2>
+    <div class="divider"></div>
+
+    <p>
+      Se pensi che il mio approccio possa essere adatto al tuo progetto,
+      puoi contattarmi direttamente.
+    </p>
+
+    <p>
+      Email: info@victoriaarchontis.com<br>
+      Telefono: +39 …
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>
+        victoriaarchontis STUDIO<br>
+        Architettura · Interior · Project Management
+      </p>
+
+      <p>
+        P. IVA …<br>
+        © 2025
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
