@@ -80,6 +80,21 @@
       padding: 96px 22px 110px;
     }
 
+    .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.brand-logo {
+  width: 20px;
+  height: auto;
+  display: block;
+}
+
+
 
     .tagline {
       font-weight: 300;
@@ -189,7 +204,15 @@
 
 <header>
   <div class="nav">
-    <div class="brand">Victoria Archontis STUDIO</div>
+   <div class="brand">
+  <img 
+    src="images/logo-symbol.png"
+    alt=""
+    class="brand-logo"
+  >
+  <span>victoriaarchontis STUDIO</span>
+</div>
+
     <nav class="menu">
       <a href="about.html">About</a>
       <a href="servizi.html">Servizi</a>
