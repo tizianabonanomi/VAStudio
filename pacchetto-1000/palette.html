@@ -1,184 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <title>Palette Colori – Presenza Digitale Essenziale</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
+  <title>Palette Colori – Confermata | victoriaarchontis STUDIO</title>
+  <meta name="description" content="Palette colori confermata per il sito di victoriaarchontis STUDIO. Toni caldi e mediterranei, sobrietà materica e accenti controllati.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #8a6666;
-      --text: #f3eded;
-      --accent: #e38f7b;
+      --dark-1: #745237;
+      --dark-2: #856953;
+      --light-1: #ECD5BC;
+      --light-2: #D9BAA7;
+      --accent-1: #E38F7B;
+      --accent-2: #CD3C36;
     }
 
     body {
       margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: "Actor", sans-serif;
-      line-height: 1.8;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--light-1);
+      color: var(--dark-1);
+      line-height: 1.6;
     }
 
-    .page {
-      max-width: 900px;
+    .wrap {
+      max-width: 980px;
       margin: 0 auto;
-      padding: 32px 18px 70px;
+      padding: 80px 22px;
+    }
+
+    h1, h2 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 500;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .status {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--dark-2);
+      margin-bottom: 40px;
+    }
+
+    .intro {
+      max-width: 70ch;
+      margin-bottom: 60px;
+      font-weight: 300;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 36px;
+    }
+
+    .color-card {
+      background: #fff;
+      border: 1px solid rgba(116,82,55,0.2);
+      padding: 22px;
+    }
+
+    .swatch {
+      height: 120px;
       margin-bottom: 16px;
     }
 
-    h2 {
-      margin-top: 36px;
-      font-size: 22px;
-      margin-bottom: 10px;
-      font-weight: 700;
+    .label {
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
     }
 
-    .subtitle {
-      font-size: 16px;
-      opacity: 0.9;
-      margin-bottom: 12px;
-    }
-
-    .color-row {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 22px;
-    }
-
-    .color {
-      width: 135px;
-      height: 135px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 10px;
+    .code {
       font-size: 14px;
-      background-size: cover;
-      border: 1px solid rgba(255,255,255,0.25);
+      font-weight: 400;
     }
 
-    .hex {
-      opacity: 0.85;
+    footer {
+      margin-top: 100px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(116,82,55,0.2);
       font-size: 13px;
-    }
-
-    a {
-      color: var(--text);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(255,255,255,0.35);
-      font-weight: 600;
-      padding-bottom: 2px;
-    }
-
-    a:hover {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .note {
-      font-size: 15px;
-      opacity: 0.9;
-      margin-top: 20px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 4px 10px;
-      background: rgba(255,255,255,0.18);
-      border-radius: 6px;
-      font-size: 13px;
-      margin-left: 8px;
+      color: var(--dark-2);
     }
   </style>
 </head>
 
 <body>
-  <main class="page">
+
+  <main class="wrap">
 
     <h1>Palette Colori</h1>
-    <p>Questa pagina raccoglie le proposte cromatiche. La <strong>Palette D</strong> è quella consigliata, basata sulla tua business card e sullo stile “mediterraneo contemporaneo”.</p>
+    <div class="status">Stato: Palette confermata dalla cliente</div>
 
-    <!-- PALETTE D — CONSIGLIATA -->
-    <h2>Palette D – Mediterranean Contemporary <span class="tag">Consigliata</span></h2>
-    <p class="subtitle">Versione signature</p>
-
-    <div class="color-row">
-      <div class="color" style="background:#E38F7B;">
-        Terracotta Glow<br>
-        <span class="hex">#E38F7B</span><br>Primario
-      </div>
-      <div class="color" style="background:#B9A998;">
-        Mediterranean Sand<br>
-        <span class="hex">#B9A998</span><br>Secondario caldo
-      </div>
-      <div class="color" style="background:#E7DCCF;">
-        Light Lime Plaster<br>
-        <span class="hex">#E7DCCF</span><br>Neutro chiaro
-      </div>
-      <div class="color" style="background:#5A4435;">
-        Stone Brown<br>
-        <span class="hex">#5A4435</span><br>Neutro scuro (testi)
-      </div>
-      <div class="color" style="background:#DCCCB8;">
-        Soft Clay<br>
-        <span class="hex">#DCCCB8</span><br>Supporto / bordi
-      </div>
-    </div>
-
-
-    <!-- PALETTE A -->
-    <h2>Palette A – Soft Neutral Warm</h2>
-    <div class="color-row">
-      <div class="color" style="background:#CBBEAE;">Warm Beige<br>#CBBEAE</div>
-      <div class="color" style="background:#A68A7F;">Soft Taupe<br>#A68A7F</div>
-      <div class="color" style="background:#F1EDE6;">Light Neutral<br>#F1EDE6</div>
-      <div class="color" style="background:#E38F7B;">Terracotta Accent<br>#E38F7B</div>
-    </div>
-
-    <!-- PALETTE B -->
-    <h2>Palette B – Modern Mediterranean</h2>
-    <div class="color-row">
-      <div class="color" style="background:#E6D8C7;">Limestone<br>#E6D8C7</div>
-      <div class="color" style="background:#C29572;">Clay Sand<br>#C29572</div>
-      <div class="color" style="background:#8C5B4A;">Earth Brown<br>#8C5B4A</div>
-      <div class="color" style="background:#D67655;">Warm Terracotta<br>#D67655</div>
-    </div>
-
-    <!-- PALETTE C -->
-    <h2>Palette C – Editorial Minimal Warm</h2>
-    <div class="color-row">
-      <div class="color" style="background:#EEE6DF;">Soft Ivory<br>#EEE6DF</div>
-      <div class="color" style="background:#CAB9A7;">Sandstone<br>#CAB9A7</div>
-      <div class="color" style="background:#8B7465;">Muted Brown<br>#8B7465</div>
-      <div class="color" style="background:#E38F7B;">Terracotta Accent<br>#E38F7B</div>
-    </div>
-
-    <p class="note">
-      Torna alla mappa del pacchetto:  
-      <a href="mappa.html">→ Mappa dei 7 blocchi</a>
+    <p class="intro">
+      Palette cromatica definitiva selezionata e confermata dalla cliente.
+      I colori riflettono uno stile mediterraneo contemporaneo, sobrio e sofisticato,
+      con particolare attenzione alla matericità, al comfort visivo e alla coerenza
+      tra architettura, interior design e lighting.
     </p>
 
-    <p class="note">
-      Torna al pacchetto principale:  
-      <a href="index.html">→ Presenza Digitale Essenziale – € 1.000</a>
-    </p>
+    <section class="palette-grid">
 
-    <p class="note">
-      Opzioni di supporto:  
-      <a href="supporto.html">→ Pacchetti di supporto</a>
-    </p>
+      <!-- SCURI -->
+      <div class="color-card">
+        <div class="swatch" style="background:#745237"></div>
+        <div class="label">Scuro primario</div>
+        <div class="code">HEX #745237</div>
+      </div>
+
+      <div class="color-card">
+        <div class="swatch" style="background:#856953"></div>
+        <div class="label">Scuro secondario</div>
+        <div class="code">HEX #856953</div>
+      </div>
+
+      <!-- CHIARI -->
+      <div class="color-card">
+        <div class="swatch" style="background:#ECD5BC"></div>
+        <div class="label">Chiaro primario</div>
+        <div class="code">HEX #ECD5BC</div>
+      </div>
+
+      <div class="color-card">
+        <div class="swatch" style="background:#D9BAA7"></div>
+        <div class="label">Chiaro secondario</div>
+        <div class="code">HEX #D9BAA7</div>
+      </div>
+
+      <!-- ACCENTI -->
+      <div class="color-card">
+        <div class="swatch" style="background:#E38F7B"></div>
+        <div class="label">Accento caldo</div>
+        <div class="code">HEX #E38F7B</div>
+      </div>
+
+      <div class="color-card">
+        <div class="swatch" style="background:#CD3C36"></div>
+        <div class="label">Accento forte</div>
+        <div class="code">HEX #CD3C36</div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>
+        Documento di riferimento interno – versione confermata.<br>
+        Ogni futura modifica cromatica dovrà essere tracciata come revisione successiva.
+      </p>
+    </footer>
 
   </main>
+
 </body>
 </html>
