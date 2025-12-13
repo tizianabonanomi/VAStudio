@@ -146,25 +146,46 @@ p{
   gap:44px;
 }
 
-/* Footer */
-footer{
-  background:rgba(236,213,188,.75);
-  border-top:1px solid rgba(116,82,55,.18);
-  padding:52px 22px;
+/* ===== FOOTER ===== */
+
+footer {
+  background: var(--plaster);
+  border-top: 1px solid rgba(90,68,53,0.2);
+  padding: 48px 22px;
 }
 
-.footer-wrap{
-  max-width:var(--max);
-  margin:0 auto;
+.footer-wrap {
+  max-width: var(--max);
+  margin: 0 auto;
 }
 
-.small{
-  font-size:12px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  font-weight:300;
-  color:var(--brown2);
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
 }
+
+.footer-name {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.footer-logo {
+  width: 14px;          /* 🔑 QUI si risolve tutto */
+  height: auto;
+  opacity: 0.75;
+  display: block;
+}
+
+.footer-desc {
+  font-size: 13px;
+  font-weight: 300;
+  margin: 0;
+}
+
 
 /* ========== PLACEHOLDER VISIVI (per mock e cliente non tech) ========== */
 
