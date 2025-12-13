@@ -1,149 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>Palette Colori – Presenza Digitale Essenziale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Palette colori – Confermata | Progetto victoriaarchontis STUDIO</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: #ffffff;
-      color: #333;
-      line-height: 1.6;
+    :root {
+      --bg: #8a6666;
+      --text: #f3eded;
+      --accent: #e38f7b;
     }
 
-    .wrap {
-      max-width: 960px;
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Actor", sans-serif;
+      line-height: 1.8;
+    }
+
+    .page {
+      max-width: 900px;
       margin: 0 auto;
-      padding: 80px 22px;
+      padding: 32px 18px 70px;
     }
 
     h1 {
-      font-size: 32px;
-      font-weight: 500;
-      margin-bottom: 6px;
+      font-size: 28px;
+      margin-bottom: 16px;
     }
 
-    .status {
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #666;
-      margin-bottom: 48px;
+    h2 {
+      margin-top: 36px;
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 700;
     }
 
-    .intro {
-      max-width: 72ch;
-      font-size: 15px;
-      font-weight: 300;
-      margin-bottom: 56px;
+    .subtitle {
+      font-size: 16px;
+      opacity: 0.9;
+      margin-bottom: 12px;
     }
 
-    .palette {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 36px;
+    .color-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
     }
 
     .color {
-      border: 1px solid #ddd;
-      padding: 20px;
-    }
-
-    .swatch {
-      height: 110px;
-      margin-bottom: 14px;
-    }
-
-    .name {
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 4px;
-    }
-
-    .code {
+      width: 135px;
+      height: 135px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px;
       font-size: 14px;
-      color: #555;
+      background-size: cover;
+      border: 1px solid rgba(255,255,255,0.25);
     }
 
-    footer {
-      margin-top: 96px;
-      padding-top: 24px;
-      border-top: 1px solid #ddd;
+    .hex {
+      opacity: 0.85;
       font-size: 13px;
-      color: #777;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.35);
+      font-weight: 600;
+      padding-bottom: 2px;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .note {
+      font-size: 15px;
+      opacity: 0.9;
+      margin-top: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      background: rgba(255,255,255,0.18);
+      border-radius: 6px;
+      font-size: 13px;
+      margin-left: 8px;
     }
   </style>
 </head>
 
 <body>
+  <main class="page">
 
-  <main class="wrap">
+    <h1>Palette Colori</h1>
+    <p>Questa pagina raccoglie le proposte cromatiche. La <strong>Palette D</strong> è quella consigliata, basata sulla tua business card e sullo stile “mediterraneo contemporaneo”.</p>
 
-    <h1>Palette colori</h1>
-    <div class="status">Stato: palette confermata dalla cliente</div>
+    <!-- PALETTE D — CONSIGLIATA -->
+    <h2>Palette D – Mediterranean Contemporary <span class="tag">Consigliata</span></h2>
+    <p class="subtitle">Versione signature</p>
 
-    <p class="intro">
-      Palette cromatica utilizzata per il progetto <strong>victoriaarchontis STUDIO</strong>.
-      I colori riportati di seguito sono stati selezionati e confermati dalla cliente.
-      Questa pagina ha funzione di tracciamento progettuale e riferimento interno.
+    <div class="color-row">
+      <div class="color" style="background:#E38F7B;">
+        Terracotta Glow<br>
+        <span class="hex">#E38F7B</span><br>Primario
+      </div>
+      <div class="color" style="background:#B9A998;">
+        Mediterranean Sand<br>
+        <span class="hex">#B9A998</span><br>Secondario caldo
+      </div>
+      <div class="color" style="background:#E7DCCF;">
+        Light Lime Plaster<br>
+        <span class="hex">#E7DCCF</span><br>Neutro chiaro
+      </div>
+      <div class="color" style="background:#5A4435;">
+        Stone Brown<br>
+        <span class="hex">#5A4435</span><br>Neutro scuro (testi)
+      </div>
+      <div class="color" style="background:#DCCCB8;">
+        Soft Clay<br>
+        <span class="hex">#DCCCB8</span><br>Supporto / bordi
+      </div>
+    </div>
+
+
+    <!-- PALETTE A -->
+    <h2>Palette A – Soft Neutral Warm</h2>
+    <div class="color-row">
+      <div class="color" style="background:#CBBEAE;">Warm Beige<br>#CBBEAE</div>
+      <div class="color" style="background:#A68A7F;">Soft Taupe<br>#A68A7F</div>
+      <div class="color" style="background:#F1EDE6;">Light Neutral<br>#F1EDE6</div>
+      <div class="color" style="background:#E38F7B;">Terracotta Accent<br>#E38F7B</div>
+    </div>
+
+    <!-- PALETTE B -->
+    <h2>Palette B – Modern Mediterranean</h2>
+    <div class="color-row">
+      <div class="color" style="background:#E6D8C7;">Limestone<br>#E6D8C7</div>
+      <div class="color" style="background:#C29572;">Clay Sand<br>#C29572</div>
+      <div class="color" style="background:#8C5B4A;">Earth Brown<br>#8C5B4A</div>
+      <div class="color" style="background:#D67655;">Warm Terracotta<br>#D67655</div>
+    </div>
+
+    <!-- PALETTE C -->
+    <h2>Palette C – Editorial Minimal Warm</h2>
+    <div class="color-row">
+      <div class="color" style="background:#EEE6DF;">Soft Ivory<br>#EEE6DF</div>
+      <div class="color" style="background:#CAB9A7;">Sandstone<br>#CAB9A7</div>
+      <div class="color" style="background:#8B7465;">Muted Brown<br>#8B7465</div>
+      <div class="color" style="background:#E38F7B;">Terracotta Accent<br>#E38F7B</div>
+    </div>
+
+    <p class="note">
+      Torna alla mappa del pacchetto:  
+      <a href="mappa.html">→ Mappa dei 7 blocchi</a>
     </p>
 
-    <section class="palette">
+    <p class="note">
+      Torna al pacchetto principale:  
+      <a href="index.html">→ Presenza Digitale Essenziale – € 1.000</a>
+    </p>
 
-      <!-- SCURI -->
-      <div class="color">
-        <div class="swatch" style="background:#745237"></div>
-        <div class="name">Scuro primario</div>
-        <div class="code">HEX #745237</div>
-      </div>
-
-      <div class="color">
-        <div class="swatch" style="background:#856953"></div>
-        <div class="name">Scuro secondario</div>
-        <div class="code">HEX #856953</div>
-      </div>
-
-      <!-- CHIARI -->
-      <div class="color">
-        <div class="swatch" style="background:#ECD5BC"></div>
-        <div class="name">Chiaro primario</div>
-        <div class="code">HEX #ECD5BC</div>
-      </div>
-
-      <div class="color">
-        <div class="swatch" style="background:#D9BAA7"></div>
-        <div class="name">Chiaro secondario</div>
-        <div class="code">HEX #D9BAA7</div>
-      </div>
-
-      <!-- ACCENTI -->
-      <div class="color">
-        <div class="swatch" style="background:#E38F7B"></div>
-        <div class="name">Accento caldo</div>
-        <div class="code">HEX #E38F7B</div>
-      </div>
-
-      <div class="color">
-        <div class="swatch" style="background:#CD3C36"></div>
-        <div class="name">Accento deciso</div>
-        <div class="code">HEX #CD3C36</div>
-      </div>
-
-    </section>
-
-    <footer>
-      Documento di progetto – palette confermata.<br>
-      Eventuali variazioni successive dovranno essere registrate come nuova revisione.
-    </footer>
+    <p class="note">
+      Opzioni di supporto:  
+      <a href="supporto.html">→ Pacchetti di supporto</a>
+    </p>
 
   </main>
-
 </body>
 </html>
