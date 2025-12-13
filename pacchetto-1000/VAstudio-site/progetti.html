@@ -4,44 +4,148 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Progetti | Calalunga, Piazza Pegli, Spalmatore | Victoria Archontis STUDIO</title>
-  <meta name="description" content="Progetti selezionati: Calalunga, Piazza Pegli, Spalmatore. Architettura e interior & lighting per seconde case e hospitality in Sud Sardegna." />
+  <title>Progetti | Calalunga, Piazza Pegli, Spalmatore | victoriaarchontis STUDIO</title>
+  <meta name="description" content="Progetti selezionati: Calalunga, Piazza Pegli, Spalmatore. Architettura, interior e lighting con metodo e continuità fino al cantiere in Sud Sardegna." />
   <meta name="robots" content="index,follow" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
-    :root{--sand:#B9A998;--soft:#DCCCB8;--plaster:#E7DCCF;--brown:#5A4435;--terracotta:#E38F7B;--raspberry:#CD3C36;--max:980px}
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--sand);color:var(--brown);line-height:1.65}
-    a{color:inherit} .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-    header{position:sticky;top:0;z-index:10;background:rgba(185,169,152,.92);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(90,68,53,.18)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
-    .brand{font-weight:500;letter-spacing:.02em;text-decoration:none}
-    .menu a{text-decoration:none;margin-left:18px;font-weight:300;letter-spacing:.06em;text-transform:uppercase;font-size:12px}
-    .menu a:hover{color:var(--raspberry)}
-    .section{padding:86px 0} .soft{background:var(--soft)}
-    h1{margin:0 0 12px;font-size:38px;font-weight:500;letter-spacing:.02em}
-    h2{margin:0 0 16px;font-size:28px;font-weight:500;letter-spacing:.02em}
-    h3{margin:0 0 10px;font-size:14px;font-weight:400;letter-spacing:.10em;text-transform:uppercase}
-    .rule{width:44px;height:1px;background:var(--brown);margin:24px 0 34px}
-    p{margin:0 0 18px;font-weight:300;max-width:74ch}
-    .thumb{
-      height:320px;background:var(--plaster);
-      border:1px solid rgba(90,68,53,.18);
-      display:flex;align-items:center;justify-content:center;
-      font-size:12px;letter-spacing:.12em;text-transform:uppercase;
-      margin:18px 0 22px;
+    :root{
+      /* Palette confermata cliente */
+      --sand:#ECD5BC;
+      --soft:#D9BAA7;
+      --plaster:#ECD5BC;
+      --brown:#745237;
+      --brown2:#856953;
+      --accent:#CD3C36;
+      --max:980px
     }
-    .toc a{display:inline-block;margin:10px 10px 0 0;text-decoration:none;border:1px solid rgba(90,68,53,.25);padding:8px 14px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300}
-    .toc a:hover{border-color:var(--raspberry);color:var(--raspberry)}
-    footer{background:var(--plaster);padding:52px 0;border-top:1px solid rgba(90,68,53,.18);font-size:14px}
-    .small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300}
+
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--sand);color:var(--brown);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+    header{
+      position:sticky;top:0;z-index:10;
+      background:rgba(236,213,188,.92);
+      backdrop-filter:saturate(120%) blur(6px);
+      border-bottom:1px solid rgba(116,82,55,.18)
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+
+    .brand{
+      display:flex;align-items:center;gap:12px;
+      text-decoration:none;color:inherit
+    }
+    .brand-logo{width:22px;height:auto;display:block}
+    .brand-name{
+      font-size:14px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--brown)
+    }
+
+    .menu a{text-decoration:none;margin-left:18px;font-weight:300;letter-spacing:.06em;text-transform:uppercase;font-size:12px}
+    .menu a:hover{color:var(--accent)}
+
+    .section{padding:86px 0}
+    .soft{background:rgba(217,186,167,.55)}
+
+    h1{
+      font-family:'Source Serif 4',serif;
+      margin:0 0 12px;font-size:38px;font-weight:500;letter-spacing:.01em
+    }
+    h2{
+      font-family:'Source Serif 4',serif;
+      margin:0 0 16px;font-size:28px;font-weight:500;letter-spacing:.01em
+    }
+    h3{margin:0 0 10px;font-size:14px;font-weight:400;letter-spacing:.10em;text-transform:uppercase;color:var(--brown2)}
+    .rule{width:44px;height:1px;background:var(--brown);margin:24px 0 34px;opacity:.7}
+
+    p{margin:0 0 18px;font-weight:300;max-width:76ch;color:rgba(116,82,55,.92)}
+    .lead{font-size:16px;max-width:78ch}
+    .micro{font-size:14px;color:rgba(116,82,55,.85)}
+
+    .toc a{
+      display:inline-block;margin:10px 10px 0 0;
+      text-decoration:none;
+      border:1px solid rgba(116,82,55,.25);
+      padding:8px 14px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:300
+    }
+    .toc a:hover{border-color:var(--accent);color:var(--accent)}
+
+    /* Immagini progetto */
+    .project-media{
+      margin:18px 0 22px;
+      border:1px solid rgba(116,82,55,.18);
+      background:rgba(255,255,255,.10);
+      overflow:hidden;
+    }
+    .project-media img{
+      display:block;
+      width:100%;
+      height:340px;
+      object-fit:cover;
+      object-position:center;
+    }
+    .project-media .placeholder{
+      height:340px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:12px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:rgba(116,82,55,.75);
+      padding:18px;
+      text-align:center;
+    }
+
+    ul{margin:0 0 18px 18px;padding:0;font-weight:300;color:rgba(116,82,55,.92)}
+    li{margin:10px 0}
+
+    .meta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin: 12px 0 18px;
+    }
+    .pill{
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid rgba(116,82,55,.22);
+      border-radius:8px;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      font-weight:300;
+      color:rgba(116,82,55,.85);
+      background:rgba(255,255,255,.08);
+    }
+
+    @media (max-width:860px){
+      .brand-name{letter-spacing:.10em}
+      .project-media img, .project-media .placeholder{height:280px}
+    }
+
+    footer{background:rgba(236,213,188,.75);padding:52px 0;border-top:1px solid rgba(116,82,55,.18);font-size:14px}
+    .small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300;color:var(--brown2)}
+    .footer-links a{border-bottom:1px solid rgba(116,82,55,.25);padding-bottom:2px}
+    .footer-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   </style>
 </head>
 
 <body>
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">Victoria Archontis STUDIO</a>
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="images/logo-symbol.png" alt="" class="brand-logo">
+      <span class="brand-name">victoriaarchontis STUDIO</span>
+    </a>
     <nav class="menu" aria-label="Navigazione principale">
       <a href="about.html">About</a>
       <a href="servizi.html">Servizi</a>
@@ -57,9 +161,10 @@
     <div class="wrap">
       <h1>Progetti</h1>
       <div class="rule"></div>
-      <p>
-        Una selezione iniziale. La pagina è strutturata per aggiungere nuovi progetti rapidamente,
-        mantenendo ordine e coerenza (utile anche per la visibilità organica).
+
+      <p class="lead">
+        Una selezione iniziale. Ogni progetto è presentato in modo essenziale: contesto, scelte chiave e cosa ho seguito.
+        La struttura è pensata per aggiungere nuovi progetti rapidamente mantenendo ordine e coerenza (utile anche per la visibilità organica).
       </p>
 
       <div class="toc" aria-label="Indice progetti">
@@ -67,36 +172,94 @@
         <a href="#piazza-pegli">Piazza Pegli</a>
         <a href="#spalmatore">Spalmatore</a>
       </div>
+
+      <p class="micro" style="margin-top:18px;">
+        Nota: qui non trovi “render di effetto”, ma scelte progettuali pensate per essere costruite e durare nel tempo.
+      </p>
     </div>
   </section>
 
+  <!-- CALALUNGA -->
   <section class="section soft" id="calalunga">
     <div class="wrap">
       <h2>Calalunga</h2>
       <div class="rule"></div>
-      <div class="thumb">Foto progetto – Calalunga (placeholder)</div>
-      <p><strong>Focus:</strong> seconda casa / atmosfera mediterranea contemporanea / luce e materiali.</p>
-      <p><strong>Approccio:</strong> progetto chiaro, scelte coerenti, attenzione a comfort e durabilità.</p>
+
+      <div class="meta-row">
+        <span class="pill">Seconda casa</span>
+        <span class="pill">Mediterraneo contemporaneo</span>
+        <span class="pill">Materia & luce</span>
+      </div>
+
+      <div class="project-media" aria-label="Immagine progetto Calalunga">
+        <!-- Se hai la foto, sostituisci il placeholder con <img src="images/calalunga.jpg" alt="Progetto Calalunga"> -->
+        <div class="placeholder">Foto progetto – Calalunga (placeholder)</div>
+      </div>
+
+      <p><strong>Focus:</strong> equilibrio tra sobrietà e calore, con palette controllata, finiture opache e attenzione alla durabilità.</p>
+
+      <h3>Cosa ho seguito</h3>
+      <ul>
+        <li>Regia del percorso: concept → scelte → esecutivi, con controllo di coerenza e priorità.</li>
+        <li>Scelte materiche e cromatiche: definizione di palette e dettagli per un risultato costruibile.</li>
+        <li>Lighting design come parte del progetto: luce per atmosfera, comfort e lettura della materia.</li>
+      </ul>
     </div>
   </section>
 
+  <!-- PIAZZA PEGLI -->
   <section class="section" id="piazza-pegli">
     <div class="wrap">
       <h2>Piazza Pegli</h2>
       <div class="rule"></div>
-      <div class="thumb">Foto progetto – Piazza Pegli (placeholder)</div>
-      <p><strong>Focus:</strong> interior & lighting / identità degli spazi / equilibrio tra estetica e funzione.</p>
-      <p><strong>Approccio:</strong> metodo decisionale per guidare scelte e priorità.</p>
+
+      <div class="meta-row">
+        <span class="pill">Interior & lighting</span>
+        <span class="pill">Sobrio</span>
+        <span class="pill">Dettaglio</span>
+      </div>
+
+      <div class="project-media" aria-label="Immagine progetto Piazza Pegli">
+        <!-- <img src="images/piazza-pegli.jpg" alt="Progetto Piazza Pegli"> -->
+        <div class="placeholder">Foto progetto – Piazza Pegli (placeholder)</div>
+      </div>
+
+      <p><strong>Focus:</strong> identità degli spazi attraverso proporzioni, materiali e luce, evitando eccessi e soluzioni di tendenza.</p>
+
+      <h3>Cosa ho seguito</h3>
+      <ul>
+        <li>Distribuzione e funzionalità: scelte chiare per rendere gli spazi leggibili e abitabili.</li>
+        <li>Coerenza estetica + materia: finiture e dettagli coordinati, senza “decorazione” fine a sé stessa.</li>
+        <li>Progetto luce: definizione di livelli e scenari per comfort e atmosfera, in continuità con l’architettura.</li>
+      </ul>
     </div>
   </section>
 
+  <!-- SPALMATORE -->
   <section class="section soft" id="spalmatore">
     <div class="wrap">
       <h2>Spalmatore</h2>
       <div class="rule"></div>
-      <div class="thumb">Foto progetto – Spalmatore (placeholder)</div>
-      <p><strong>Focus:</strong> contesto e materiali / comfort climatico / coerenza architettura–interni.</p>
-      <p><strong>Approccio:</strong> gestione integrata del percorso per mantenere continuità fino al cantiere.</p>
+
+      <div class="meta-row">
+        <span class="pill">Contesto</span>
+        <span class="pill">Materiali</span>
+        <span class="pill">Continuità fino al cantiere</span>
+      </div>
+
+      <div class="project-media" aria-label="Immagine progetto Spalmatore">
+        <!-- <img src="images/spalmatore.jpg" alt="Progetto Spalmatore"> -->
+        <div class="placeholder">Foto progetto – Spalmatore (placeholder)</div>
+      </div>
+
+      <p><strong>Focus:</strong> rapporto con il contesto, comfort climatico e coerenza tra architettura e interni.</p>
+
+      <h3>Cosa ho seguito</h3>
+      <ul>
+        <li>Scelte architettoniche: volumi/aperture e criteri funzionali legati a uso e manutenzione.</li>
+        <li>Dettagli costruttivi e coordinamento: riduzione di errori e imprevisti con imprese e fornitori.</li>
+        <li>Pratiche e direzione lavori (quando richiesto): continuità tra progetto, autorizzazioni e cantiere.</li>
+      </ul>
     </div>
   </section>
 
@@ -104,8 +267,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="small">Victoria Archontis STUDIO</div>
-    <p><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="servizi.html">Servizi</a></p>
+    <div class="small">victoriaarchontis STUDIO</div>
+    <p class="footer-links"><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="servizi.html">Servizi</a> · <a href="index.html#contatti">Contatti</a></p>
   </div>
 </footer>
 </body>
