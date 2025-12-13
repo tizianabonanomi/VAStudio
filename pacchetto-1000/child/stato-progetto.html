@@ -4,142 +4,131 @@
   <meta charset="UTF-8" />
   <title>Stato del progetto – Presenza Digitale Essenziale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
 
   <style>
-    :root { --bg:#8a6666; --text:#f3eded; --accent:#e38f7b; --line:rgba(255,255,255,0.22); }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:"Actor",sans-serif;line-height:1.8;font-size:18px;}
-    .page{max-width:980px;margin:0 auto;padding:32px 18px 70px;}
-    h1{font-size:26px;margin:0 0 10px;font-weight:700;}
-    .subtitle{opacity:.9;margin:0 0 22px;font-size:15px}
-    a{color:var(--text);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:2px;font-weight:600;}
-    a:hover{color:var(--accent);border-bottom-color:var(--accent);}
-    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px;}
-    @media (max-width:880px){.grid{grid-template-columns:1fr;}}
-    .card{
-      border:1px solid var(--line);
-      border-radius:12px;
-      padding:16px 16px 14px;
-      background:rgba(255,255,255,0.06);
+    :root {
+      --bg: #8a6666;
+      --text: #f3eded;
+      --accent: #e38f7b;
     }
-    .card h2{margin:0 0 8px;font-size:18px;font-weight:700;}
-    .tag{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);opacity:.95;margin-left:8px;}
-    .kpi{font-size:14px;opacity:.9;margin:0 0 10px}
-    ul{margin:0;padding-left:18px}
-    li{margin:8px 0}
-    .done{opacity:.85;text-decoration:line-through}
-    .warn{color:#ffe7d8}
-    .sep{height:1px;background:var(--line);margin:20px 0}
-    .links{margin-top:22px;font-size:14px;opacity:.9}
-    .links p{margin:8px 0}
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Actor", sans-serif;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 70px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    ul {
+      margin-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .done {
+      color: #d7ccc7;
+      text-decoration: line-through;
+    }
+
+    .pending {
+      opacity: 0.85;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
+      padding-bottom: 2px;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .note {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-top: 20px;
+    }
   </style>
 </head>
 
 <body>
-<main class="page">
-  <h1>Stato del progetto – Presenza Digitale Essenziale</h1>
-  <p class="subtitle">
-    Tracking operativo (mock esterno + replica nei limiti Supersite Aruba).
-  </p>
+  <main class="page">
 
-  <div class="grid">
+    <h1>Stato del progetto – Presenza Digitale Essenziale</h1>
 
-    <!-- 1 -->
-    <section class="card">
-      <h2>1) Posizionamento & Direzione Creativa <span class="tag">🟡 In validazione</span></h2>
-      <p class="kpi">Obiettivo: messaggio chiaro + target extra-Carloforte + tono “metodico, sobrio, sofisticato”.</p>
-      <ul>
-        <li class="done">Raccolta risposte cliente (punti di forza / cosa NON comunicare)</li>
-        <li class="done">Direzione: metodo + regia completa + lighting come firma</li>
-        <li class="done">Palette: confermata dalla cliente</li>
-        <li class="warn">In attesa: conferma su messaggio Home + taglio comunicativo finale</li>
-      </ul>
-    </section>
+    <h2>Attività completate</h2>
+    <ul>
+      <li class="done">Analisi iniziale posizionamento e target</li>
+      <li class="done">Definizione approccio progettuale e valori</li>
+      <li class="done">Prima proposta palette</li>
+      <li class="done">Conferma palette da parte della cliente</li>
+      <li class="done">Creazione mock sito completo (Home, About, Servizi, Progetti, Blog placeholder)</li>
+    </ul>
 
-    <!-- 2 -->
-    <section class="card">
-      <h2>2) Riorganizzazione & Struttura sito <span class="tag">🟢 Mock completato</span></h2>
-      <p class="kpi">Obiettivo: struttura essenziale, ordinata, comprensibile per non tecnici.</p>
-      <ul>
-        <li class="done">Architettura 4 pagine (Home / About / Servizi / Progetti)</li>
-        <li class="done">Navigazione coerente + CTA</li>
-        <li class="done">Blog previsto in nav (placeholder)</li>
-      </ul>
-    </section>
+    <h2>Attività in corso</h2>
+    <ul>
+      <li class="pending">
+        Allineamento linguaggio e testi:
+        <br>
+        – i contenuti attuali sono provvisori (mock)
+        <br>
+        – i testi definitivi devono essere forniti/validati dalla cliente
+      </li>
 
-    <!-- 3 -->
-    <section class="card">
-      <h2>3) Impostazione stilistica & visiva <span class="tag">🟢 Chiuso</span></h2>
-      <p class="kpi">Obiettivo: minimalismo editoriale + gerarchie chiare + coerenza.</p>
-      <ul>
-        <li class="done">Palette cliente confermata</li>
-        <li class="done">Scelte tipografiche e spaziature coerenti</li>
-        <li class="done">Decisione: nessun simbolo/logo grafico in header/footer (solo tipografia)</li>
-      </ul>
-    </section>
+      <li class="pending">
+        Verifica fattibilità tecnica su Supersite Aruba:
+        <br>
+        – replica layout nei limiti del pacchetto Supersite
+        <br>
+        – eventuali adattamenti necessari
+      </li>
+    </ul>
 
-    <!-- 4 -->
-    <section class="card">
-      <h2>4) Testi & Linguaggio <span class="tag">🔴 Bloccato (input)</span></h2>
-      <p class="kpi">Obiettivo: testi finali allineati alla voce della cliente (non provvisori).</p>
-      <ul>
-        <li class="warn">In attesa: testi definitivi dalla cliente <em>oppure</em> brief per riscrittura</li>
-        <li>Da fare: revisione Home (visitor-first), About (metodo/valori), Servizi (3 macro-aree), Progetti (schede)</li>
-      </ul>
-    </section>
+    <h2>Attività da completare</h2>
+    <ul>
+      <li>Conferma finale dei testi da parte della cliente</li>
+      <li>Adattamento visivo definitivo su Supersite Aruba</li>
+      <li>Pubblicazione versione finale del sito</li>
+    </ul>
 
-    <!-- 5 -->
-    <section class="card">
-      <h2>5) SEO di base <span class="tag">🟡 Impostato</span></h2>
-      <p class="kpi">Obiettivo: struttura Google-friendly, keyword locali e long-tail extra-Carloforte.</p>
-      <ul>
-        <li class="done">Gerarchie H1/H2 + descrizioni base predisposte</li>
-        <li class="warn">Da finalizzare dopo testi definitivi (title/meta/heading)</li>
-      </ul>
-    </section>
+    <p class="note">
+      Questo stato progetto documenta il lavoro svolto e delimita le attività incluse nel pacchetto.
+      Il mock serve come riferimento visivo e concettuale, non come implementazione tecnica finale.
+    </p>
 
-    <!-- 6 -->
-    <section class="card">
-      <h2>6) Struttura contenuti futuri <span class="tag">🟡 Predisposto</span></h2>
-      <p class="kpi">Obiettivo: progetti e blog aggiornabili senza “disordine”.</p>
-      <ul>
-        <li class="done">Sezione “Dal blog” in Home (placeholder)</li>
-        <li class="done">Pagina Blog mock con placeholder (no 404)</li>
-        <li>Da fare: definire 3 categorie + 3 titoli articoli reali</li>
-      </ul>
-    </section>
+    <p class="note"><a href="../mappa.html">→ Mappa dei blocchi</a></p>
+    <p class="note"><a href="../index.html">→ Pacchetto Presenza Digitale Essenziale</a></p>
 
-    <!-- 7 -->
-    <section class="card">
-      <h2>7) Handover & guida manutenzione <span class="tag">⚪ Non iniziato</span></h2>
-      <p class="kpi">Obiettivo: consegna istruzioni per aggiornare progetti/blog senza rompere SEO.</p>
-      <ul>
-        <li>Da fare a fine lavoro: guida rapida + cosa evitare + checklist aggiornamenti</li>
-      </ul>
-    </section>
-
-    <!-- INPUT ATTESI -->
-    <section class="card">
-      <h2>Input attesi dalla cliente <span class="tag">⏳</span></h2>
-      <p class="kpi">Per sbloccare il blocco 4 e finalizzare SEO.</p>
-      <ul>
-        <li>Conferma struttura e tono (OK / modifiche)</li>
-        <li>Testi finali (o brief per riscrittura)</li>
-        <li>Scelta immagini: 1 hero + 3 progetti + 1 ritratto About</li>
-        <li>Conferma gestione Blog su Supersite (URL/voce menu)</li>
-      </ul>
-    </section>
-
-  </div>
-
-  <div class="sep"></div>
-
-  <div class="links">
-    <p><a href="../index.html">→ Pacchetto</a></p>
-    <p><a href="../mappa.html">→ Mappa dei 7 blocchi</a></p>
-    <p><a href="tracking.html">→ Tracking & log decisioni</a></p>
-  </div>
-</main>
+  </main>
 </body>
 </html>
