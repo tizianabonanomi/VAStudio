@@ -1,5 +1,5 @@
 :root{
-  /* Palette confermata cliente */
+  /* ===== PALETTE CONFERMATA CLIENTE ===== */
   --sand:#ECD5BC;     /* sfondo principale */
   --soft:#D9BAA7;     /* sezioni alternate */
   --plaster:#ECD5BC;  /* chiaro/box */
@@ -7,18 +7,18 @@
   --brown2:#856953;   /* testo secondario */
   --accent:#CD3C36;   /* accento */
 
-  /* Aggiunta: “Cloud Dancer” (supporto chiaro) */
+  /* Supporto chiaro – “Cloud Dancer” */
   --cloud:#F4F1EA;
   --cloud2:#FBFAF7;
 
   --max:980px;
 }
 
+/* ===== RESET BASE ===== */
 *{box-sizing:border-box}
 
 body{
   margin:0;
-  /* FEEDBACK: tipografia Calibri Light */
   font-family:"Calibri Light","Calibri","Segoe UI",Arial,sans-serif;
   background:var(--sand);
   color:var(--brown);
@@ -27,34 +27,43 @@ body{
 
 a{color:inherit;text-decoration:none}
 
-/* Layout */
-.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-.section{padding:86px 0}
-.soft{background:rgba(217,186,167,.55)}
+/* ===== LAYOUT ===== */
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 22px;
+}
 
-/* FEEDBACK: campiture marroni controllate + cloud */
+.section{
+  padding:86px 0;
+}
+
+/* sezioni soft originali */
+.soft{
+  background:rgba(217,186,167,.55);
+}
+
+/* FEEDBACK: campiture controllate */
 .section--tint{
-  background: linear-gradient(180deg,
+  background:linear-gradient(
+    180deg,
     rgba(116,82,55,.08),
     rgba(244,241,234,.35)
   );
 }
-.section--cloud{background:var(--cloud)}
-/* separatori più “ritmo” */
-.rule{
-  width:44px;
-  height:1px;
-  background:rgba(116,82,55,.85);
-  margin:24px 0 34px;
-  opacity:.7;
+
+.section--cloud{
+  background:var(--cloud);
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header{
-  position:sticky;top:0;z-index:10;
+  position:sticky;
+  top:0;
+  z-index:10;
   background:rgba(236,213,188,.92);
   border-bottom:1px solid rgba(116,82,55,.18);
-  backdrop-filter: blur(6px);
+  backdrop-filter:blur(6px);
 }
 
 .nav{
@@ -65,23 +74,28 @@ header{
   align-items:center;
   justify-content:space-between;
 }
+
 .brand{
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-  color: inherit;
-  gap: 10px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
 }
 
 .brand-logo{
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-  display: block;
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  display:block;
 }
 
-.brand-name{line-height:1}
+.brand-name{
+  line-height:1;
+  letter-spacing:.12em;
+  font-weight:300;
+}
 
+/* ===== MENU ===== */
 .menu a{
   margin-left:18px;
   font-size:12px;
@@ -89,9 +103,12 @@ header{
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-.menu a:hover{color:var(--accent)}
 
-/* Typography (Calibri Light ovunque) */
+.menu a:hover{
+  color:var(--accent);
+}
+
+/* ===== TYPOGRAPHY ===== */
 h1,h2{
   font-family:"Calibri Light","Calibri","Segoe UI",Arial,sans-serif;
   font-weight:300;
@@ -99,13 +116,271 @@ h1,h2{
   color:var(--brown);
 }
 
-h1{margin:0 0 14px;font-size:40px;line-height:1.15}
-h2{margin:0 0 16px;font-size:28px}
+h1{
+  margin:0 0 14px;
+  font-size:40px;
+  line-height:1.15;
+}
+
 h1 span{display:block}
+
+h2{
+  margin:0 0 16px;
+  font-size:28px;
+}
 
 h3{
   margin:0 0 10px;
   font-size:13px;
   font-weight:300;
   letter-spacing:.10em;
-  t
+  text-transform:uppercase;
+  color:var(--brown2);
+}
+
+p{
+  margin:0 0 18px;
+  font-weight:300;
+  max-width:70ch;
+  color:rgba(116,82,55,.92);
+}
+
+/* separatore */
+.rule{
+  width:44px;
+  height:1px;
+  background:rgba(116,82,55,.85);
+  margin:24px 0 34px;
+  opacity:.7;
+}
+
+.tagline{
+  font-size:12px;
+  font-weight:300;
+  letter-spacing:.22em;
+  text-transform:lowercase;
+  margin-bottom:18px;
+  color:rgba(116,82,55,.88);
+}
+
+/* ===== CTA / BUTTON ===== */
+.cta,
+.cta:visited{
+  display:inline-block;
+  padding:12px 28px;
+  border:1.5px solid var(--accent);
+  background:transparent;
+  color:var(--brown);
+  font-size:12px;
+  font-weight:300;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+
+  /* FEEDBACK: testo lungo */
+  white-space:normal;
+  text-wrap:balance;
+  line-height:1.15;
+  max-width:100%;
+}
+
+.cta:hover{
+  background:var(--accent);
+  color:#fff;
+}
+
+.cta.secondary{
+  border-color:rgba(116,82,55,.35);
+}
+
+.cta.secondary:hover{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#fff;
+}
+
+/* CTA group spacing */
+.cta{margin-top:10px}
+.cta + .cta{margin-left:18px}
+
+/* ===== HERO ===== */
+.hero{
+  padding:86px 22px 72px;
+}
+
+.hero-inner{
+  max-width:760px;
+  margin:0 auto;
+  padding-left:56px; /* asimmetria controllata */
+}
+
+.hero-text,
+.hero-note{
+  max-width:62ch;
+}
+
+.hero-note{margin-bottom:30px}
+
+/* ===== GRID ===== */
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:44px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:rgba(236,213,188,.55);
+  border:1px solid rgba(116,82,55,.18);
+  padding:22px;
+}
+
+.card h3{margin-bottom:8px}
+
+.card .micro{
+  font-size:13px;
+  opacity:.85;
+}
+
+/* ===== PLACEHOLDER ===== */
+.placeholder{
+  min-height:220px;
+  border:1px dashed rgba(116,82,55,.35);
+  background:rgba(236,213,188,.45);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:18px;
+  font-size:12px;
+  line-height:1.5;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:rgba(116,82,55,.75);
+}
+
+/* ===== PHOTO ===== */
+.photo{
+  width:100%;
+  max-width:420px;
+  aspect-ratio:1/1;
+  overflow:hidden;
+  border:1px solid rgba(116,82,55,.18);
+  background:rgba(236,213,188,.55);
+  margin:28px 0 34px;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.photo .placeholder{
+  height:100%;
+  border:0;
+  background:transparent;
+}
+
+/* ===== ABOUT LAYOUT ===== */
+.about-layout{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:48px;
+  align-items:start;
+}
+
+.about-photo{
+  width:100%;
+  aspect-ratio:3/4;
+  overflow:hidden;
+  border:1px solid rgba(90,68,53,.18);
+  background:#E7DCCF;
+}
+
+.about-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ===== FORM (QUESTIONARIO) ===== */
+.form input[type="text"],
+.form input[type="email"],
+.form textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid rgba(116,82,55,.25);
+  background:rgba(244,241,234,.6);
+  color:var(--brown);
+  font:inherit;
+}
+
+.form fieldset{
+  border:1px solid rgba(116,82,55,.18);
+  padding:14px 14px 6px;
+  margin:0 0 16px;
+  background:rgba(236,213,188,.25);
+}
+
+.form legend{
+  font-size:12px;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+  color:var(--brown2);
+  padding:0 8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--plaster);
+  border-top:1px solid rgba(90,68,53,.2);
+  padding:48px 22px;
+}
+
+.footer-wrap{
+  max-width:var(--max);
+  margin:0 auto;
+}
+
+.footer-brand{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+
+.footer-name{
+  font-size:12px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  font-weight:300;
+}
+
+/* ===== FEEDBACK: NASCONDI PACCHETTI ===== */
+.packages,
+.section-packages,
+#packages{
+  display:none !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:860px){
+  .grid3{grid-template-columns:1fr}
+  .hero-inner{padding-left:0}
+  h1{font-size:32px}
+  .brand-name{letter-spacing:.10em}
+  .about-layout{grid-template-columns:1fr}
+}
+
+@media (max-width:600px){
+  .cta{
+    display:block;
+    margin-top:14px;
+  }
+  .cta + .cta{
+    margin-left:0;
+    margin-top:12px;
+  }
+}
