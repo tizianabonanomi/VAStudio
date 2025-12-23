@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stato del progetto – Presenza Digitale Essenziale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Font coerente con il sito -->
+  <style>
+    :root{
+      --sand:#ECD5BC;
+      --soft:#D9BAA7;
+      --plaster:#ECD5BC;
+      --brown:#745237;
+      --brown2:#856953;
+      --accent:#CD3C36;
+
+      /* chiari caldi (no bianco) */
+      --cloud:#EFE6D8;
+      --cloud2:#E9DDCC;
+
+      --line: rgba(116,82,55,.22);
+      --panel: rgba(244,241,234,.72);
+
+      --max: 920px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Calibri Light","Calibri","Segoe UI",Arial,sans-serif;
+      background:var(--sand);
+      color:var(--brown);
+      line-height:1.65;
+      font-size:16px;
+    }
+    a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(116,82,55,.35);padding-bottom:2px;font-weight:600}
+    a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+    .page{max-width:var(--max);margin:0 auto;padding:34px 18px 72px}
+    h1{font-size:26px;margin:0 0 12px;font-weight:700;letter-spacing:.01em}
+    h2{font-size:19px;margin:34px 0 10px;font-weight:700}
+
+    ul{margin:0 0 0 1.2rem;padding:0}
+    li{margin:0 0 10px}
+    .done{opacity:.78;text-decoration:line-through}
+    .pending{opacity:.95}
+    .muted{opacity:.86}
+
+    .pill{
+      display:inline-block;
+      font-size:12px;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(244,241,234,.55);
+      vertical-align:middle;
+      white-space:nowrap;
+    }
+
+    .note{
+      font-size:13px;
+      opacity:.85;
+      margin-top:18px;
+    }
+
+    /* blocchi */
+    .legend{
+      font-size:13px;
+      opacity:.92;
+      margin:10px 0 14px;
+      padding:10px 12px;
+      border:1px solid var(--line);
+      background:var(--panel);
+      border-radius:12px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    @media (max-width: 860px){
+      .cards{grid-template-columns:1fr}
+    }
+    .card{
+      border:1px solid var(--line);
+      background:var(--panel);
+      border-radius:14px;
+      padding:14px 14px 12px;
+      box-shadow:0 8px 22px rgba(116,82,55,.06);
+    }
+    .card-top{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:6px;
+    }
+    .card h3{
+      margin:0;
+      font-size:15px;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    .status{
+      display:inline-block;
+      font-size:12px;
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(239,230,216,.75);
+      opacity:.98;
+      white-space:nowrap;
+    }
+    .card p{margin:0;font-size:13px;opacity:.92}
+    .card ul{
+      margin:10px 0 0;
+      padding-left:18px;
+      font-size:13px;
+      opacity:.95;
+    }
+    .card li{margin:8px 0}
+
+    /* evidenze */
+    .warn{
+      border-left:3px solid var(--accent);
+      padding-left:10px;
+    }
+
+    /* mini-sezione Aruba */
+    .platform{
+      margin-top:14px;
+      padding:12px 12px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(239,230,216,.75), rgba(244,241,234,.70));
+      border-radius:12px;
+    }
+    .platform h3{
+      margin:0 0 8px;
+      font-size:15px;
+      font-weight:700;
+    }
+    .platform ul{margin-left:1.1rem}
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <h1>Stato del progetto – Presenza Digitale Essenziale</h1>
+
+    <div class="platform">
+      <h3>Stato replica su Supersite Aruba <span class="pill">aggiornato</span></h3>
+      <ul>
+        <li class="done">Mock replicato su Aruba (struttura e impaginazione principali)</li>
+        <li class="pending warn">Blog non ancora completato (manca struttura/articoli/categorie)</li>
+        <li class="pending warn">Sfondo attualmente bianco: non modificabile al momento (possibile bug/limite dell’ultimo deploy Aruba)</li>
+        <li class="done">Pagine eliminate su Aruba (la piattaforma non consente archiviazione/cartelle)</li>
+        <li class="done">Pagine esportate in CSV (backup contenuti)</li>
+        <li class="pending">SEO: si procede quando arrivano i contenuti definitivi (testi + immagini)</li>
+      </ul>
+    </div>
+
+    <h2>Attività completate</h2>
+    <ul>
+      <li class="done">Analisi iniziale posizionamento e target</li>
+      <li class="done">Definizione approccio progettuale e valori (metodico, sobrio, sofisticato)</li>
+      <li class="done">Conferma palette da parte della cliente</li>
+      <li class="done">Creazione mock sito (Home, About, Servizi, Progetti, Blog placeholder)</li>
+      <li class="done">Replica del mock su Supersite Aruba (nei limiti della piattaforma)</li>
+      <li class="done">Pulizia pagine in Aruba + esportazione CSV dei contenuti pre-esistenti</li>
+    </ul>
+
+    <h2>Attività in corso</h2>
+    <ul>
+      <li class="pending">
+        Allineamento linguaggio e testi:
+        <br>
+        – i contenuti attuali sono provvisori (mock)
+        <br>
+        – i testi definitivi devono essere forniti/validati dalla cliente
+      </li>
+
+      <li class="pending">
+        Verifica tecnica Supersite Aruba:
+        <br>
+        – gestione del bug/limite sullo sfondo (attualmente bianco)
+        <br>
+        – completamento Blog (struttura + contenuti)
+      </li>
+
+      <li class="pending">
+        Preparazione SEO:
+        <br>
+        – si attiva appena ricevuti i contenuti definitivi (titoli, testi, immagini, progetti)
+      </li>
+    </ul>
+
+    <h2>Attività da completare</h2>
+    <ul>
+      <li>Conferma finale dei testi da parte della cliente</li>
+      <li>Completamento Blog (pagina + primi contenuti)</li>
+      <li>Correzione/override sfondo (se risolvibile lato Aruba; altrimenti workaround)</li>
+      <li>SEO base (title/meta/heading/URL dove possibile su Supersite)</li>
+      <li>Pubblicazione versione finale del sito</li>
+      <li>Guida manutenzione (come aggiornare senza rompere struttura/SEO)</li>
+    </ul>
+
+    <h2>Stato per blocchi (1–7)</h2>
+    <div class="legend">
+      <strong>Legenda:</strong>
+      🟢 completato · 🟡 in corso / in validazione · 🔴 bloccato (input necessario) · ⚪ non iniziato
+    </div>
+
+    <div class="cards">
+
+      <section class="card">
+        <div class="card-top">
+          <h3>1) Posizionamento</h3>
+          <span class="status">🟡 In validazione</span>
+        </div>
+        <p class="muted">Messaggio centrale, target, tono di voce.</p>
+        <ul>
+          <li class="done">Risposte cliente raccolte (punti di forza / cosa non comunicare)</li>
+          <li class="done">Direzione: metodo + regia completa + lighting come firma</li>
+          <li>Da chiudere: testi finali coerenti con la sua voce</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>2) Riorganizzazione sito</h3>
+          <span class="status">🟢 Replicato su Aruba</span>
+        </div>
+        <p class="muted">Pulizia e struttura ordinata su Supersite.</p>
+        <ul>
+          <li class="done">Struttura definita nel mock</li>
+          <li class="done">Replica eseguita su Supersite Aruba (nei limiti)</li>
+          <li class="done">Pagine eliminate + esportazione CSV (backup)</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>3) Pagine principali (4)</h3>
+          <span class="status">🟡 Struttura OK, contenuti mancanti</span>
+        </div>
+        <p class="muted">Home, About, Servizi, Progetti.</p>
+        <ul>
+          <li class="done">Pagine replicate (layout + sezioni)</li>
+          <li>Da fare: contenuti finali + immagini reali</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>4) Stile visivo</h3>
+          <span class="status">🟡 Parziale (bug sfondo)</span>
+        </div>
+        <p class="muted">Palette, font, gerarchie e coerenza.</p>
+        <ul>
+          <li class="done">Palette confermata dalla cliente</li>
+          <li class="done">Impostazione visiva applicata nel mock</li>
+          <li class="warn">Sfondo Aruba attualmente bianco: da risolvere/aggirare</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>5) SEO base</h3>
+          <span class="status">🔴 In attesa contenuti</span>
+        </div>
+        <p class="muted">Titoli/descrizioni e struttura leggibile.</p>
+        <ul>
+          <li class="done">Struttura pagine predisposta</li>
+          <li class="warn">Dipende dai testi definitivi (keyword, meta, heading, snippet)</li>
+          <li>Una volta ricevuti i contenuti: implementazione SEO e rifiniture</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>6) Blog & contenuti futuri</h3>
+          <span class="status">🔴 Mancante</span>
+        </div>
+        <p class="muted">Blog attivo + struttura per nuovi contenuti.</p>
+        <ul>
+          <li class="done">Placeholder concettuale definito nel mock</li>
+          <li class="warn">Da fare: attivazione/completamento Blog su Aruba</li>
+          <li>Da fare: 3 articoli iniziali + 1 categoria base</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>7) Guida manutenzione</h3>
+          <span class="status">⚪ Non iniziato</span>
+        </div>
+        <p class="muted">Istruzioni per aggiornare senza perdere coerenza/SEO.</p>
+        <ul>
+          <li>Da fare a fine progetto: guida rapida + checklist</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-top">
+          <h3>Dipendenze / input cliente</h3>
+          <span class="status">🔴 Necessari</span>
+        </div>
+        <p class="muted">Il “da fare da parte cliente” resta valido.</p>
+        <ul>
+          <li>Testi definitivi (o brief per riscrittura)</li>
+          <li>Immagini: hero + 3 progetti + ritratto About</li>
+          <li>Conferma uso Blog in nav su Supersite (voce menu / URL)</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <p class="note">
+      Nota: il mock è un riferimento visivo e concettuale. La versione finale viene replicata nei limiti di Supersite Aruba; dove la piattaforma impone vincoli (es. sfondo), si applica un workaround o si accetta una variante controllata.
+    </p>
+
+    <!-- link coerenti con la struttura precedente (modificali se su Aruba hai url diversi) -->
+    <p class="note"><a href="../mappa.html">→ Mappa dei blocchi</a></p>
+    <p class="note"><a href="../index.html">→ Pacchetto Presenza Digitale Essenziale</a></p>
+
+  </main>
+</body>
+</html>
