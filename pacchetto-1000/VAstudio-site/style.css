@@ -1,14 +1,11 @@
-:root {
-  /* Palette finale cliente */
-  --bg: #282625;              /* dune */
-  --text: #d9baa7;            /* cameo */
-  --text-muted: #695f5f;      /* scorpion */
-
-  --accent: #7f5637;          /* potters-clay */
-  --accent-strong: #70492d;   /* old-copper */
-
-  --line: rgba(217,186,167,0.22);
-  --panel: rgba(217,186,167,0.08);
+:root{
+  /* alias per compatibilità col CSS già scritto */
+  --sand: var(--bg);
+  --plaster: var(--bg);
+  --brown: var(--text);
+  --brown2: var(--text-muted);
+  --soft: rgba(217,186,167,.10);
+  --max: 980px;
 }
 
 .muted {
@@ -20,10 +17,16 @@
 body{
   margin:0;
   font-family:Inter,Arial,sans-serif;
-  background:var(--sand);
-  color:var(--brown);
+  background: var(--bg);
+  color: var(--text);
   line-height:1.65;
 }
+
+h1,h2{ color: var(--text); }
+h3{ color: var(--text-muted); }
+p{ color: rgba(217,186,167,.92); } /* cameo con lieve trasparenza */
+header{ background: rgba(40,38,37,.92); border-bottom: 1px solid rgba(217,186,167,.18); }
+footer{ background: rgba(40,38,37,.92); border-top: 1px solid rgba(217,186,167,.18); }
 
 a{color:inherit;text-decoration:none}
 
