@@ -145,13 +145,6 @@
 
     .card li { margin: 8px 0; }
     .muted { opacity: 0.85; }
-
-    /* --- Evidenze / alert --- */
-    .warn {
-      border-left: 3px solid var(--accent);
-      padding-left: 10px;
-      margin-left: -10px;
-    }
   </style>
 </head>
 
@@ -163,52 +156,24 @@
     <h2>Attività completate</h2>
     <ul>
       <li class="done">Analisi iniziale posizionamento e target</li>
-      <li class="done">Definizione approccio progettuale e valori (metodico, sobrio, sofisticato)</li>
+      <li class="done">Definizione approccio progettuale e valori</li>
       <li class="done">Conferma palette da parte della cliente</li>
       <li class="done">Creazione mock sito (Home, About, Servizi, Progetti, Blog placeholder)</li>
       <li class="done">Replica mock su Supersite Aruba (nei limiti della piattaforma)</li>
-      <li class="done">Pulizia pagine su Aruba (non archiviabili/in cartelle) + esportazione CSV</li>
-    </ul>
-
-    <h2>Attività in corso</h2>
-    <ul>
-      <li class="pending">
-        Allineamento linguaggio e testi:
-        <br>
-        – i contenuti attuali sono provvisori (mock)
-        <br>
-        – i testi definitivi devono essere forniti/validati dalla cliente
-      </li>
-
-      <li class="pending">
-        Blog:
-        <br>
-        – non ancora completato (struttura + primi contenuti)
-      </li>
-
-      <li class="pending warn">
-        Resa su Aruba:
-        <br>
-        – sfondo attualmente bianco nonostante impostazione (possibile bug/limite ultimo deploy)
-        <br>
-        – da verificare workaround o impostazione alternativa consentita
-      </li>
+      <li class="done">Pulizia pagine su Aruba + esportazione CSV</li>
+      <li class="done">Struttura blog e contenuti futuri predisposta</li>
     </ul>
 
     <h2>Attività da completare</h2>
     <ul>
-      <li>Conferma finale dei testi da parte della cliente</li>
-      <li>Completamento Blog (pagina + primi articoli/categorie)</li>
-      <li>Correzione/override sfondo (se risolvibile lato Aruba; altrimenti soluzione alternativa controllata)</li>
-      <li>SEO base (title/meta/heading/URL dove possibile su Supersite)</li>
-      <li>Pubblicazione versione finale del sito</li>
-      <li>Guida manutenzione (come aggiornare senza rompere struttura/SEO)</li>
+      <li>SEO base (title, meta, heading, struttura URL)</li>
+      <li>Guida finale per la manutenzione autonoma del sito</li>
     </ul>
 
     <h2>Stato per blocchi (1–7)</h2>
     <div class="legend">
       <strong>Legenda:</strong>
-      🟢 completato · 🟡 in corso / in validazione · 🔴 bloccato (input necessario) · ⚪ non iniziato
+      🟢 completato · ⚪ da completare
     </div>
 
     <div class="cards">
@@ -216,14 +181,9 @@
       <section class="card">
         <div class="card-top">
           <h3>1) Posizionamento</h3>
-          <span class="status">🟡 In validazione</span>
+          <span class="status">🟢 Completato</span>
         </div>
-        <p class="muted">Messaggio centrale, target, tono di voce.</p>
-        <ul>
-          <li class="done">Risposte cliente raccolte (punti di forza / cosa non comunicare)</li>
-          <li class="done">Direzione: metodo + regia completa + lighting come firma</li>
-          <li>Da chiudere: testi finali coerenti con la sua voce</li>
-        </ul>
+        <p class="muted">Messaggio centrale, target e tono di voce.</p>
       </section>
 
       <section class="card">
@@ -231,94 +191,53 @@
           <h3>2) Riorganizzazione sito</h3>
           <span class="status">🟢 Completato</span>
         </div>
-        <p class="muted">Pulizia e struttura ordinata su Supersite.</p>
-        <ul>
-          <li class="done">Struttura definita nel mock</li>
-          <li class="done">Replica eseguita su Supersite Aruba (nei limiti)</li>
-          <li class="done">Pagine eliminate + esportazione CSV (backup contenuti)</li>
-        </ul>
+        <p class="muted">Architettura del sito e pulizia delle pagine.</p>
       </section>
 
       <section class="card">
         <div class="card-top">
-          <h3>3) Pagine principali (4)</h3>
-          <span class="status">🟡 Struttura pronta</span>
+          <h3>3) Pagine principali</h3>
+          <span class="status">🟢 Completato</span>
         </div>
         <p class="muted">Home, About, Servizi, Progetti.</p>
-        <ul>
-          <li class="done">Pagine create nel mock</li>
-          <li class="done">Layout replicato su Aruba</li>
-          <li>Da fare: inserire contenuti finali + immagini reali</li>
-        </ul>
       </section>
 
       <section class="card">
         <div class="card-top">
           <h3>4) Stile visivo</h3>
-          <span class="status">🟡 Parziale</span>
+          <span class="status">🟢 Completato</span>
         </div>
-        <p class="muted">Palette, font, gerarchie e coerenza.</p>
-        <ul>
-          <li class="done">Palette confermata dalla cliente</li>
-          <li class="done">Impostazione visiva applicata nel mock</li>
-          <li class="warn">Su Aruba: sfondo al momento bianco (probabile bug/limite)</li>
-        </ul>
+        <p class="muted">Palette, font e coerenza estetica.</p>
       </section>
 
       <section class="card">
         <div class="card-top">
           <h3>5) SEO base</h3>
-          <span class="status">🔴 In attesa contenuti</span>
+          <span class="status">⚪ Da completare</span>
         </div>
-        <p class="muted">Titoli/descrizioni e struttura leggibile.</p>
-        <ul>
-          <li class="done">Struttura pagine predisposta</li>
-          <li>Dipende dai testi finali (keyword e meta)</li>
-          <li class="done">Una volta ricevuti i contenuti: procedo con SEO</li>
-        </ul>
+        <p class="muted">Ottimizzazione per visibilità su Google.</p>
       </section>
 
       <section class="card">
         <div class="card-top">
-          <h3>6) Blog & contenuti futuri</h3>
-          <span class="status">🟡 Da completare</span>
+          <h3>6) Struttura contenuti</h3>
+          <span class="status">🟢 Completato</span>
         </div>
-        <p class="muted">Blog attivo + struttura per nuovi contenuti.</p>
-        <ul>
-          <li class="done">Placeholder previsto (evita 404)</li>
-          <li>Da fare: completare Blog su Aruba</li>
-          <li>Da fare: 3 articoli iniziali + 1 categoria base</li>
-        </ul>
+        <p class="muted">Modelli pronti per progetti e articoli futuri.</p>
       </section>
 
       <section class="card">
         <div class="card-top">
           <h3>7) Guida manutenzione</h3>
-          <span class="status">⚪ Non iniziato</span>
+          <span class="status">⚪ Da completare</span>
         </div>
-        <p class="muted">Istruzioni per aggiornare senza perdere coerenza/SEO.</p>
-        <ul>
-          <li>Da fare a fine progetto: guida rapida + checklist</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <div class="card-top">
-          <h3>Dipendenze / input cliente</h3>
-          <span class="status">🔴 Necessari</span>
-        </div>
-        <p class="muted">Il “da fare” lato cliente resta valido.</p>
-        <ul>
-          <li>Testi definitivi (o brief per riscrittura)</li>
-          <li>Scelta immagini: hero + 3 progetti + ritratto About</li>
-          <li>Conferma uso Blog in nav su Supersite (voce menu / URL)</li>
-        </ul>
+        <p class="muted">Istruzioni per aggiornamenti autonomi e sicuri.</p>
       </section>
 
     </div>
 
     <p class="note">
-      Il mock è un riferimento visivo e concettuale. La versione finale verrà replicata nei limiti della piattaforma Supersite Aruba.
+      Il progetto è strutturalmente completo. Restano da finalizzare solo SEO e guida di manutenzione per il cliente.
     </p>
 
     <p class="note"><a href="../mappa.html">→ Mappa dei blocchi</a></p>
