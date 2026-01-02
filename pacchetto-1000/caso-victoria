@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Caso studio – Presenza Digitale Essenziale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #8a6666;
+      --text: #f3eded;
+      --accent: #e38f7b;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: "Actor", sans-serif;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 70px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 36px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin: 0 0 20px 1.2rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <h1>Caso studio – Presenza Digitale Essenziale</h1>
+
+    <p>
+      Questo progetto è un esempio concreto di applicazione del pacchetto
+      <strong>Presenza Digitale Essenziale</strong>.
+    </p>
+
+    <p>
+      Il lavoro non ha riguardato lo sviluppo tecnico del sito, ma la
+      definizione della struttura, del posizionamento e della logica dei contenuti,
+      per rendere la presenza online più chiara, coerente e professionale.
+    </p>
+
+    <h2>Il contesto</h2>
+    <p>
+      Il progetto riguarda uno studio di architettura e interior design con una forte identità
+      progettuale ma una presenza digitale poco strutturata e poco leggibile per l’utente finale.
+    </p>
+
+    <h2>Obiettivo dell’intervento</h2>
+    <ul>
+      <li>chiarire il posizionamento professionale</li>
+      <li>rendere comprensibile il valore del lavoro svolto</li>
+      <li>organizzare i contenuti in modo ordinato e scalabile</li>
+      <li>costruire una base solida per sviluppi futuri</li>
+    </ul>
+
+    <h2>Cosa è stato fatto</h2>
+    <ul>
+      <li>definizione del messaggio principale</li>
+      <li>strutturazione delle pagine del sito</li>
+      <li>organizzazione dei contenuti per aree logiche</li>
+      <li>impostazione dello stile visivo e del tono di voce</li>
+      <li>struttura SEO di base</li>
+    </ul>
+
+    <h2>Cosa non rientra nel progetto</h2>
+    <ul>
+      <li>sviluppo tecnico del sito</li>
+      <li>realizzazione grafica avanzata</li>
+      <li>gestione hosting o manutenzione tecnica</li>
+    </ul>
+
+    <p class="note">
+      Questo esempio mostra il lavoro di consulenza, direzione e struttura,
+      non la realizzazione tecnica del sito.
+    </p>
+
+    <p class="note" style="margin-top: 24px;">
+      → <a href="https://www.sitovictoria.it" target="_blank">
+      Visualizza il sito finale</a>
+    </p>
+
+    <p class="note" style="margin-top: 28px;">
+      Torna al pacchetto:
+      <a href="index.html">Presenza Digitale Essenziale</a>
+    </p>
+
+  </main>
+</body>
+</html>
