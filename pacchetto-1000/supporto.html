@@ -1,32 +1,168 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>Supporto</title>
-<link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#8a6666;color:#f3eded;font-family:Actor}
-.page{max-width:860px;margin:auto;padding:32px}
-</style>
+  <meta charset="UTF-8" />
+  <title>Supporto e manutenzione – Officina Digitale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #8a6666;
+      color: #f3eded;
+      font-family: "Actor", sans-serif;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 18px 70px;
+    }
+
+    .logo {
+      display: flex;
+      gap: 8px;
+      letter-spacing: 0.14em;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .logo span:first-child {
+      opacity: 0.5;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 36px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin: 0 0 20px 1.2rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-weight: 700;
+      margin-top: 6px;
+    }
+
+    .box {
+      margin-top: 28px;
+      padding: 18px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.18);
+    }
+
+    .note {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    a {
+      color: #f3eded;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
 <main class="page">
 
-<header>
-<div class="logo"><span>/</span><span>OFFICINA DIGITALE</span></div>
-</header>
+  <header>
+    <div class="logo">
+      <span>/</span><span>OFFICINA DIGITALE</span>
+    </div>
+  </header>
 
-<h1>Supporto e manutenzione</h1>
+  <h1>Supporto e manutenzione</h1>
 
-<ul>
-  <li>supporto periodico</li>
-  <li>ticket singoli</li>
-  <li>supervisione</li>
-</ul>
+  <p>
+    Dopo la consegna del sito è possibile proseguire con un supporto leggero,
+    pensato per mantenere ordine, coerenza e funzionalità nel tempo.
+  </p>
 
-<p>
-← <a href="index.html">Torna al pacchetto</a>
-</p>
+  <p>
+    Il supporto non è obbligatorio: serve a chi vuole evitare improvvisazioni,
+    accumulo di errori o interventi disordinati.
+  </p>
+
+  <h2>Tipologie di supporto</h2>
+
+  <div class="box">
+    <h3>1. Manutenzione trimestrale</h3>
+    <p class="price">€ 280 / trimestre</p>
+
+    <ul>
+      <li>revisione generale del sito</li>
+      <li>aggiornamento testi o immagini</li>
+      <li>controllo coerenza visiva</li>
+      <li>fino a 2 interventi inclusi</li>
+    </ul>
+
+    <p class="note">
+      Ideale per chi aggiorna il sito saltuariamente.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>2. Supporto mensile leggero</h3>
+    <p class="price">€ 160 / mese</p>
+
+    <ul>
+      <li>aggiornamenti mensili</li>
+      <li>piccole modifiche strutturali</li>
+      <li>inserimento contenuti</li>
+      <li>verifica coerenza generale</li>
+    </ul>
+
+    <p class="note">
+      Adatto a chi aggiorna il sito con una certa regolarità.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>3. Supervisione digitale</h3>
+    <p class="price">€ 240 / mese</p>
+
+    <ul>
+      <li>supporto continuativo</li>
+      <li>consulenza su struttura e contenuti</li>
+      <li>prioritizzazione interventi</li>
+      <li>allineamento con evoluzione del progetto</li>
+    </ul>
+
+    <p class="note">
+      Non include marketing o SEO avanzata.
+    </p>
+  </div>
+
+  <h2>Opzione alternativa: ticket</h2>
+
+  <p>
+    Se non desideri un supporto continuativo, puoi richiedere interventi
+    singoli tramite sistema a ticket.
+  </p>
+
+  <p>
+    → <a href="ticket.html">Vai alla pagina “Apertura ticket”</a>
+  </p>
+
+  <p class="note" style="margin-top:32px;">
+    ← <a href="index.html">Torna al pacchetto Presenza Digitale Essenziale</a>
+  </p>
 
 </main>
 </body>
